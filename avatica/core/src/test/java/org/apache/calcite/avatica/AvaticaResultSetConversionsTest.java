@@ -16,7 +16,6 @@
  */
 package org.apache.calcite.avatica;
 
-import org.apache.calcite.avatica.ColumnMetaData.AvaticaType;
 import org.apache.calcite.avatica.remote.TypedValue;
 import org.apache.calcite.avatica.util.DateTimeUtils;
 
@@ -88,16 +87,6 @@ public class AvaticaResultSetConversionsTest {
     @Override public ExecuteResult prepareAndExecute(StatementHandle h, String sql,
         long maxRowCount, PrepareCallback callback) throws NoSuchStatementException {
       throw new UnsupportedOperationException();
-    }
-
-    private static ColumnMetaData columnMetaData(String name, int ordinal, AvaticaType type,
-        int columnNullable) {
-      return new ColumnMetaData(
-          ordinal, false, true, false, false,
-          columnNullable,
-          true, -1, name, name, null,
-          0, 0, null, null, type, true, false, false,
-          type.columnClassName());
     }
 
     @Override public ExecuteResult prepareAndExecute(StatementHandle h, String sql,

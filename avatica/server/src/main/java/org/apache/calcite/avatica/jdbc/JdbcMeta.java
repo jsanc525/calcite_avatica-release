@@ -37,6 +37,7 @@ import org.apache.calcite.avatica.remote.ProtobufMeta;
 import org.apache.calcite.avatica.remote.TypedValue;
 import org.apache.calcite.avatica.util.Unsafe;
 
+import com.google.common.base.Optional;
 import com.google.common.cache.Cache;
 import com.google.common.cache.CacheBuilder;
 import com.google.common.cache.RemovalListener;
@@ -804,7 +805,7 @@ public class JdbcMeta implements ProtobufMeta {
         return Frame.EMPTY;
       } else {
         return JdbcResultSet.frame(statementInfo, statementInfo.getResultSet(), offset,
-            fetchMaxRowCount, calendar);
+            fetchMaxRowCount, calendar, Optional.<Meta.Signature>absent());
       }
     } catch (SQLException e) {
       throw propagate(e);
@@ -846,7 +847,6 @@ public class JdbcMeta implements ProtobufMeta {
       }
 
       if (preparedStatement.execute()) {
-        final Meta.Frame frame;
         final Signature signature2;
         if (preparedStatement.isWrapperFor(AvaticaPreparedStatement.class)) {
           signature2 = h.signature;
@@ -861,7 +861,6 @@ public class JdbcMeta implements ProtobufMeta {
         statementInfo.setResultSet(preparedStatement.getResultSet());
 
         if (statementInfo.getResultSet() == null) {
-          frame = Frame.EMPTY;
           resultSets = Collections.<MetaResultSet>singletonList(
               JdbcResultSet.empty(h.connectionId, h.id, signature2));
         } else {
