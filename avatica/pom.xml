@@ -47,6 +47,14 @@ limitations under the License.
     </mailingList>
   </mailingLists>
 
+  <distributionManagement>
+    <repository>
+      <id>${repo.id}</id>
+      <name>Internal Repository</name>
+      <url>${internal.maven.repo}</url>
+    </repository>
+  </distributionManagement>
+
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <top.dir>${project.basedir}</top.dir>
