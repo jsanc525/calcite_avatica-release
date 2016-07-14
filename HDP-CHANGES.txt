@@ -2,3 +2,4 @@ The following changes are included over Apache Calcite Avatica 1.8.0
 
 CALCITE-1282 Avatica will only accept SPNEGO-authenticated clients from the same realm as the server's principal
 CALCITE-1300 Retry on HTTP-503 in hc-based AvaticaHttpClient
+CALCITE-1315 Automatically retry request when a server fails to deliver an HTTP response
