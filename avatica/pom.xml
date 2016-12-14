@@ -63,6 +63,7 @@ limitations under the License.
     <version.minor>8</version.minor>
 
     <!-- This list is in alphabetical order. -->
+    <bouncycastle.version>1.55</bouncycastle.version>
     <build-helper-maven-plugin.version>1.9</build-helper-maven-plugin.version>
     <checksum-maven-plugin.version>1.2</checksum-maven-plugin.version>
     <commons-lang3.version>3.2</commons-lang3.version>
@@ -260,6 +261,16 @@ limitations under the License.
         <groupId>org.apache.httpcomponents</groupId>
         <artifactId>httpcore</artifactId>
         <version>${httpcore.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.bouncycastle</groupId>
+        <artifactId>bcpkix-jdk15on</artifactId>
+        <version>${bouncycastle.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.bouncycastle</groupId>
+        <artifactId>bcprov-jdk15on</artifactId>
+        <version>${bouncycastle.version}</version>
       </dependency>
       <dependency>
         <groupId>org.mockito</groupId>
