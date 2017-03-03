@@ -26,6 +26,7 @@ import java.math.BigDecimal;
 import java.math.BigInteger;
 import java.util.HashMap;
 import java.util.LinkedHashSet;
+import java.util.Locale;
 import java.util.Properties;
 import java.util.Set;
 
@@ -238,11 +239,11 @@ public class AvaticaUtilsTest {
     }
 
     public String name() {
-      return name.toUpperCase();
+      return name.toUpperCase(Locale.ROOT);
     }
 
     public String camelName() {
-      return name.toLowerCase();
+      return name.toLowerCase(Locale.ROOT);
     }
 
     public Object defaultValue() {
