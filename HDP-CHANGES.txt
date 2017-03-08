@@ -4,3 +4,4 @@ CALCITE-1282 Avatica will only accept SPNEGO-authenticated clients from the same
 CALCITE-1300 Retry on HTTP-503 in hc-based AvaticaHttpClient
 CALCITE-1315 Automatically retry request when a server fails to deliver an HTTP response
 CALCITE-1458 Add column values to the deprecated protobuf attribute
+CALCITE-1654 Avoid generating a String from the Request/Response when it will not be logged
