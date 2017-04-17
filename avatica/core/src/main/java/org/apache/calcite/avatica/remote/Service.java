@@ -1039,7 +1039,7 @@ public interface Service {
       if (msg.getHasParameterValues()) {
         values = new ArrayList<>(msg.getParameterValuesCount());
         for (Common.TypedValue valueProto : msg.getParameterValuesList()) {
-          if (TypedValue.NULL_PROTO.equals(valueProto)) {
+          if (TypedValue.PROTO_IMPLICIT_NULL.equals(valueProto)) {
             values.add(null);
           } else {
             values.add(TypedValue.fromProto(valueProto));
@@ -1061,7 +1061,7 @@ public interface Service {
         builder.setHasParameterValues(true);
         for (TypedValue paramValue : parameterValues) {
           if (paramValue == null) {
-            builder.addParameterValues(TypedValue.NULL_PROTO);
+            builder.addParameterValues(TypedValue.PROTO_IMPLICIT_NULL);
           } else {
             builder.addParameterValues(paramValue.toProto());
           }
