@@ -19,11 +19,11 @@ public final class Requests {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>optional string connection_id = 1;</code>
+     * <code>string connection_id = 1;</code>
      */
     java.lang.String getConnectionId();
     /**
-     * <code>optional string connection_id = 1;</code>
+     * <code>string connection_id = 1;</code>
      */
     com.google.protobuf.ByteString
         getConnectionIdBytes();
@@ -104,7 +104,7 @@ public final class Requests {
     public static final int CONNECTION_ID_FIELD_NUMBER = 1;
     private volatile java.lang.Object connectionId_;
     /**
-     * <code>optional string connection_id = 1;</code>
+     * <code>string connection_id = 1;</code>
      */
     public java.lang.String getConnectionId() {
       java.lang.Object ref = connectionId_;
@@ -119,7 +119,7 @@ public final class Requests {
       }
     }
     /**
-     * <code>optional string connection_id = 1;</code>
+     * <code>string connection_id = 1;</code>
      */
     public com.google.protobuf.ByteString
         getConnectionIdBytes() {
@@ -187,7 +187,7 @@ public final class Requests {
         return memoizedHashCode;
       }
       int hash = 41;
-      hash = (19 * hash) + getDescriptorForType().hashCode();
+      hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + CONNECTION_ID_FIELD_NUMBER;
       hash = (53 * hash) + getConnectionId().hashCode();
       hash = (29 * hash) + unknownFields.hashCode();
@@ -195,6 +195,17 @@ public final class Requests {
       return hash;
     }
 
+    public static org.apache.calcite.avatica.proto.Requests.CatalogsRequest parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static org.apache.calcite.avatica.proto.Requests.CatalogsRequest parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
     public static org.apache.calcite.avatica.proto.Requests.CatalogsRequest parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -410,7 +421,7 @@ public final class Requests {
 
       private java.lang.Object connectionId_ = "";
       /**
-       * <code>optional string connection_id = 1;</code>
+       * <code>string connection_id = 1;</code>
        */
       public java.lang.String getConnectionId() {
         java.lang.Object ref = connectionId_;
@@ -425,7 +436,7 @@ public final class Requests {
         }
       }
       /**
-       * <code>optional string connection_id = 1;</code>
+       * <code>string connection_id = 1;</code>
        */
       public com.google.protobuf.ByteString
           getConnectionIdBytes() {
@@ -441,7 +452,7 @@ public final class Requests {
         }
       }
       /**
-       * <code>optional string connection_id = 1;</code>
+       * <code>string connection_id = 1;</code>
        */
       public Builder setConnectionId(
           java.lang.String value) {
@@ -454,7 +465,7 @@ public final class Requests {
         return this;
       }
       /**
-       * <code>optional string connection_id = 1;</code>
+       * <code>string connection_id = 1;</code>
        */
       public Builder clearConnectionId() {
         
@@ -463,7 +474,7 @@ public final class Requests {
         return this;
       }
       /**
-       * <code>optional string connection_id = 1;</code>
+       * <code>string connection_id = 1;</code>
        */
       public Builder setConnectionIdBytes(
           com.google.protobuf.ByteString value) {
@@ -530,11 +541,11 @@ public final class Requests {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>optional string connection_id = 1;</code>
+     * <code>string connection_id = 1;</code>
      */
     java.lang.String getConnectionId();
     /**
-     * <code>optional string connection_id = 1;</code>
+     * <code>string connection_id = 1;</code>
      */
     com.google.protobuf.ByteString
         getConnectionIdBytes();
@@ -615,7 +626,7 @@ public final class Requests {
     public static final int CONNECTION_ID_FIELD_NUMBER = 1;
     private volatile java.lang.Object connectionId_;
     /**
-     * <code>optional string connection_id = 1;</code>
+     * <code>string connection_id = 1;</code>
      */
     public java.lang.String getConnectionId() {
       java.lang.Object ref = connectionId_;
@@ -630,7 +641,7 @@ public final class Requests {
       }
     }
     /**
-     * <code>optional string connection_id = 1;</code>
+     * <code>string connection_id = 1;</code>
      */
     public com.google.protobuf.ByteString
         getConnectionIdBytes() {
@@ -698,7 +709,7 @@ public final class Requests {
         return memoizedHashCode;
       }
       int hash = 41;
-      hash = (19 * hash) + getDescriptorForType().hashCode();
+      hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + CONNECTION_ID_FIELD_NUMBER;
       hash = (53 * hash) + getConnectionId().hashCode();
       hash = (29 * hash) + unknownFields.hashCode();
@@ -706,6 +717,17 @@ public final class Requests {
       return hash;
     }
 
+    public static org.apache.calcite.avatica.proto.Requests.DatabasePropertyRequest parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static org.apache.calcite.avatica.proto.Requests.DatabasePropertyRequest parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
     public static org.apache.calcite.avatica.proto.Requests.DatabasePropertyRequest parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -921,7 +943,7 @@ public final class Requests {
 
       private java.lang.Object connectionId_ = "";
       /**
-       * <code>optional string connection_id = 1;</code>
+       * <code>string connection_id = 1;</code>
        */
       public java.lang.String getConnectionId() {
         java.lang.Object ref = connectionId_;
@@ -936,7 +958,7 @@ public final class Requests {
         }
       }
       /**
-       * <code>optional string connection_id = 1;</code>
+       * <code>string connection_id = 1;</code>
        */
       public com.google.protobuf.ByteString
           getConnectionIdBytes() {
@@ -952,7 +974,7 @@ public final class Requests {
         }
       }
       /**
-       * <code>optional string connection_id = 1;</code>
+       * <code>string connection_id = 1;</code>
        */
       public Builder setConnectionId(
           java.lang.String value) {
@@ -965,7 +987,7 @@ public final class Requests {
         return this;
       }
       /**
-       * <code>optional string connection_id = 1;</code>
+       * <code>string connection_id = 1;</code>
        */
       public Builder clearConnectionId() {
         
@@ -974,7 +996,7 @@ public final class Requests {
         return this;
       }
       /**
-       * <code>optional string connection_id = 1;</code>
+       * <code>string connection_id = 1;</code>
        */
       public Builder setConnectionIdBytes(
           com.google.protobuf.ByteString value) {
@@ -1041,31 +1063,31 @@ public final class Requests {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>optional string catalog = 1;</code>
+     * <code>string catalog = 1;</code>
      */
     java.lang.String getCatalog();
     /**
-     * <code>optional string catalog = 1;</code>
+     * <code>string catalog = 1;</code>
      */
     com.google.protobuf.ByteString
         getCatalogBytes();
 
     /**
-     * <code>optional string schema_pattern = 2;</code>
+     * <code>string schema_pattern = 2;</code>
      */
     java.lang.String getSchemaPattern();
     /**
-     * <code>optional string schema_pattern = 2;</code>
+     * <code>string schema_pattern = 2;</code>
      */
     com.google.protobuf.ByteString
         getSchemaPatternBytes();
 
     /**
-     * <code>optional string connection_id = 3;</code>
+     * <code>string connection_id = 3;</code>
      */
     java.lang.String getConnectionId();
     /**
-     * <code>optional string connection_id = 3;</code>
+     * <code>string connection_id = 3;</code>
      */
     com.google.protobuf.ByteString
         getConnectionIdBytes();
@@ -1160,7 +1182,7 @@ public final class Requests {
     public static final int CATALOG_FIELD_NUMBER = 1;
     private volatile java.lang.Object catalog_;
     /**
-     * <code>optional string catalog = 1;</code>
+     * <code>string catalog = 1;</code>
      */
     public java.lang.String getCatalog() {
       java.lang.Object ref = catalog_;
@@ -1175,7 +1197,7 @@ public final class Requests {
       }
     }
     /**
-     * <code>optional string catalog = 1;</code>
+     * <code>string catalog = 1;</code>
      */
     public com.google.protobuf.ByteString
         getCatalogBytes() {
@@ -1194,7 +1216,7 @@ public final class Requests {
     public static final int SCHEMA_PATTERN_FIELD_NUMBER = 2;
     private volatile java.lang.Object schemaPattern_;
     /**
-     * <code>optional string schema_pattern = 2;</code>
+     * <code>string schema_pattern = 2;</code>
      */
     public java.lang.String getSchemaPattern() {
       java.lang.Object ref = schemaPattern_;
@@ -1209,7 +1231,7 @@ public final class Requests {
       }
     }
     /**
-     * <code>optional string schema_pattern = 2;</code>
+     * <code>string schema_pattern = 2;</code>
      */
     public com.google.protobuf.ByteString
         getSchemaPatternBytes() {
@@ -1228,7 +1250,7 @@ public final class Requests {
     public static final int CONNECTION_ID_FIELD_NUMBER = 3;
     private volatile java.lang.Object connectionId_;
     /**
-     * <code>optional string connection_id = 3;</code>
+     * <code>string connection_id = 3;</code>
      */
     public java.lang.String getConnectionId() {
       java.lang.Object ref = connectionId_;
@@ -1243,7 +1265,7 @@ public final class Requests {
       }
     }
     /**
-     * <code>optional string connection_id = 3;</code>
+     * <code>string connection_id = 3;</code>
      */
     public com.google.protobuf.ByteString
         getConnectionIdBytes() {
@@ -1327,7 +1349,7 @@ public final class Requests {
         return memoizedHashCode;
       }
       int hash = 41;
-      hash = (19 * hash) + getDescriptorForType().hashCode();
+      hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + CATALOG_FIELD_NUMBER;
       hash = (53 * hash) + getCatalog().hashCode();
       hash = (37 * hash) + SCHEMA_PATTERN_FIELD_NUMBER;
@@ -1339,6 +1361,17 @@ public final class Requests {
       return hash;
     }
 
+    public static org.apache.calcite.avatica.proto.Requests.SchemasRequest parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static org.apache.calcite.avatica.proto.Requests.SchemasRequest parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
     public static org.apache.calcite.avatica.proto.Requests.SchemasRequest parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -1568,7 +1601,7 @@ public final class Requests {
 
       private java.lang.Object catalog_ = "";
       /**
-       * <code>optional string catalog = 1;</code>
+       * <code>string catalog = 1;</code>
        */
       public java.lang.String getCatalog() {
         java.lang.Object ref = catalog_;
@@ -1583,7 +1616,7 @@ public final class Requests {
         }
       }
       /**
-       * <code>optional string catalog = 1;</code>
+       * <code>string catalog = 1;</code>
        */
       public com.google.protobuf.ByteString
           getCatalogBytes() {
@@ -1599,7 +1632,7 @@ public final class Requests {
         }
       }
       /**
-       * <code>optional string catalog = 1;</code>
+       * <code>string catalog = 1;</code>
        */
       public Builder setCatalog(
           java.lang.String value) {
@@ -1612,7 +1645,7 @@ public final class Requests {
         return this;
       }
       /**
-       * <code>optional string catalog = 1;</code>
+       * <code>string catalog = 1;</code>
        */
       public Builder clearCatalog() {
         
@@ -1621,7 +1654,7 @@ public final class Requests {
         return this;
       }
       /**
-       * <code>optional string catalog = 1;</code>
+       * <code>string catalog = 1;</code>
        */
       public Builder setCatalogBytes(
           com.google.protobuf.ByteString value) {
@@ -1637,7 +1670,7 @@ public final class Requests {
 
       private java.lang.Object schemaPattern_ = "";
       /**
-       * <code>optional string schema_pattern = 2;</code>
+       * <code>string schema_pattern = 2;</code>
        */
       public java.lang.String getSchemaPattern() {
         java.lang.Object ref = schemaPattern_;
@@ -1652,7 +1685,7 @@ public final class Requests {
         }
       }
       /**
-       * <code>optional string schema_pattern = 2;</code>
+       * <code>string schema_pattern = 2;</code>
        */
       public com.google.protobuf.ByteString
           getSchemaPatternBytes() {
@@ -1668,7 +1701,7 @@ public final class Requests {
         }
       }
       /**
-       * <code>optional string schema_pattern = 2;</code>
+       * <code>string schema_pattern = 2;</code>
        */
       public Builder setSchemaPattern(
           java.lang.String value) {
@@ -1681,7 +1714,7 @@ public final class Requests {
         return this;
       }
       /**
-       * <code>optional string schema_pattern = 2;</code>
+       * <code>string schema_pattern = 2;</code>
        */
       public Builder clearSchemaPattern() {
         
@@ -1690,7 +1723,7 @@ public final class Requests {
         return this;
       }
       /**
-       * <code>optional string schema_pattern = 2;</code>
+       * <code>string schema_pattern = 2;</code>
        */
       public Builder setSchemaPatternBytes(
           com.google.protobuf.ByteString value) {
@@ -1706,7 +1739,7 @@ public final class Requests {
 
       private java.lang.Object connectionId_ = "";
       /**
-       * <code>optional string connection_id = 3;</code>
+       * <code>string connection_id = 3;</code>
        */
       public java.lang.String getConnectionId() {
         java.lang.Object ref = connectionId_;
@@ -1721,7 +1754,7 @@ public final class Requests {
         }
       }
       /**
-       * <code>optional string connection_id = 3;</code>
+       * <code>string connection_id = 3;</code>
        */
       public com.google.protobuf.ByteString
           getConnectionIdBytes() {
@@ -1737,7 +1770,7 @@ public final class Requests {
         }
       }
       /**
-       * <code>optional string connection_id = 3;</code>
+       * <code>string connection_id = 3;</code>
        */
       public Builder setConnectionId(
           java.lang.String value) {
@@ -1750,7 +1783,7 @@ public final class Requests {
         return this;
       }
       /**
-       * <code>optional string connection_id = 3;</code>
+       * <code>string connection_id = 3;</code>
        */
       public Builder clearConnectionId() {
         
@@ -1759,7 +1792,7 @@ public final class Requests {
         return this;
       }
       /**
-       * <code>optional string connection_id = 3;</code>
+       * <code>string connection_id = 3;</code>
        */
       public Builder setConnectionIdBytes(
           com.google.protobuf.ByteString value) {
@@ -1826,31 +1859,31 @@ public final class Requests {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>optional string catalog = 1;</code>
+     * <code>string catalog = 1;</code>
      */
     java.lang.String getCatalog();
     /**
-     * <code>optional string catalog = 1;</code>
+     * <code>string catalog = 1;</code>
      */
     com.google.protobuf.ByteString
         getCatalogBytes();
 
     /**
-     * <code>optional string schema_pattern = 2;</code>
+     * <code>string schema_pattern = 2;</code>
      */
     java.lang.String getSchemaPattern();
     /**
-     * <code>optional string schema_pattern = 2;</code>
+     * <code>string schema_pattern = 2;</code>
      */
     com.google.protobuf.ByteString
         getSchemaPatternBytes();
 
     /**
-     * <code>optional string table_name_pattern = 3;</code>
+     * <code>string table_name_pattern = 3;</code>
      */
     java.lang.String getTableNamePattern();
     /**
-     * <code>optional string table_name_pattern = 3;</code>
+     * <code>string table_name_pattern = 3;</code>
      */
     com.google.protobuf.ByteString
         getTableNamePatternBytes();
@@ -1879,16 +1912,16 @@ public final class Requests {
      * Having an empty type_list is distinct from a null type_list
      * </pre>
      *
-     * <code>optional bool has_type_list = 6;</code>
+     * <code>bool has_type_list = 6;</code>
      */
     boolean getHasTypeList();
 
     /**
-     * <code>optional string connection_id = 7;</code>
+     * <code>string connection_id = 7;</code>
      */
     java.lang.String getConnectionId();
     /**
-     * <code>optional string connection_id = 7;</code>
+     * <code>string connection_id = 7;</code>
      */
     com.google.protobuf.ByteString
         getConnectionIdBytes();
@@ -2011,7 +2044,7 @@ public final class Requests {
     public static final int CATALOG_FIELD_NUMBER = 1;
     private volatile java.lang.Object catalog_;
     /**
-     * <code>optional string catalog = 1;</code>
+     * <code>string catalog = 1;</code>
      */
     public java.lang.String getCatalog() {
       java.lang.Object ref = catalog_;
@@ -2026,7 +2059,7 @@ public final class Requests {
       }
     }
     /**
-     * <code>optional string catalog = 1;</code>
+     * <code>string catalog = 1;</code>
      */
     public com.google.protobuf.ByteString
         getCatalogBytes() {
@@ -2045,7 +2078,7 @@ public final class Requests {
     public static final int SCHEMA_PATTERN_FIELD_NUMBER = 2;
     private volatile java.lang.Object schemaPattern_;
     /**
-     * <code>optional string schema_pattern = 2;</code>
+     * <code>string schema_pattern = 2;</code>
      */
     public java.lang.String getSchemaPattern() {
       java.lang.Object ref = schemaPattern_;
@@ -2060,7 +2093,7 @@ public final class Requests {
       }
     }
     /**
-     * <code>optional string schema_pattern = 2;</code>
+     * <code>string schema_pattern = 2;</code>
      */
     public com.google.protobuf.ByteString
         getSchemaPatternBytes() {
@@ -2079,7 +2112,7 @@ public final class Requests {
     public static final int TABLE_NAME_PATTERN_FIELD_NUMBER = 3;
     private volatile java.lang.Object tableNamePattern_;
     /**
-     * <code>optional string table_name_pattern = 3;</code>
+     * <code>string table_name_pattern = 3;</code>
      */
     public java.lang.String getTableNamePattern() {
       java.lang.Object ref = tableNamePattern_;
@@ -2094,7 +2127,7 @@ public final class Requests {
       }
     }
     /**
-     * <code>optional string table_name_pattern = 3;</code>
+     * <code>string table_name_pattern = 3;</code>
      */
     public com.google.protobuf.ByteString
         getTableNamePatternBytes() {
@@ -2146,7 +2179,7 @@ public final class Requests {
      * Having an empty type_list is distinct from a null type_list
      * </pre>
      *
-     * <code>optional bool has_type_list = 6;</code>
+     * <code>bool has_type_list = 6;</code>
      */
     public boolean getHasTypeList() {
       return hasTypeList_;
@@ -2155,7 +2188,7 @@ public final class Requests {
     public static final int CONNECTION_ID_FIELD_NUMBER = 7;
     private volatile java.lang.Object connectionId_;
     /**
-     * <code>optional string connection_id = 7;</code>
+     * <code>string connection_id = 7;</code>
      */
     public java.lang.String getConnectionId() {
       java.lang.Object ref = connectionId_;
@@ -2170,7 +2203,7 @@ public final class Requests {
       }
     }
     /**
-     * <code>optional string connection_id = 7;</code>
+     * <code>string connection_id = 7;</code>
      */
     public com.google.protobuf.ByteString
         getConnectionIdBytes() {
@@ -2284,7 +2317,7 @@ public final class Requests {
         return memoizedHashCode;
       }
       int hash = 41;
-      hash = (19 * hash) + getDescriptorForType().hashCode();
+      hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + CATALOG_FIELD_NUMBER;
       hash = (53 * hash) + getCatalog().hashCode();
       hash = (37 * hash) + SCHEMA_PATTERN_FIELD_NUMBER;
@@ -2305,6 +2338,17 @@ public final class Requests {
       return hash;
     }
 
+    public static org.apache.calcite.avatica.proto.Requests.TablesRequest parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static org.apache.calcite.avatica.proto.Requests.TablesRequest parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
     public static org.apache.calcite.avatica.proto.Requests.TablesRequest parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -2569,7 +2613,7 @@ public final class Requests {
 
       private java.lang.Object catalog_ = "";
       /**
-       * <code>optional string catalog = 1;</code>
+       * <code>string catalog = 1;</code>
        */
       public java.lang.String getCatalog() {
         java.lang.Object ref = catalog_;
@@ -2584,7 +2628,7 @@ public final class Requests {
         }
       }
       /**
-       * <code>optional string catalog = 1;</code>
+       * <code>string catalog = 1;</code>
        */
       public com.google.protobuf.ByteString
           getCatalogBytes() {
@@ -2600,7 +2644,7 @@ public final class Requests {
         }
       }
       /**
-       * <code>optional string catalog = 1;</code>
+       * <code>string catalog = 1;</code>
        */
       public Builder setCatalog(
           java.lang.String value) {
@@ -2613,7 +2657,7 @@ public final class Requests {
         return this;
       }
       /**
-       * <code>optional string catalog = 1;</code>
+       * <code>string catalog = 1;</code>
        */
       public Builder clearCatalog() {
         
@@ -2622,7 +2666,7 @@ public final class Requests {
         return this;
       }
       /**
-       * <code>optional string catalog = 1;</code>
+       * <code>string catalog = 1;</code>
        */
       public Builder setCatalogBytes(
           com.google.protobuf.ByteString value) {
@@ -2638,7 +2682,7 @@ public final class Requests {
 
       private java.lang.Object schemaPattern_ = "";
       /**
-       * <code>optional string schema_pattern = 2;</code>
+       * <code>string schema_pattern = 2;</code>
        */
       public java.lang.String getSchemaPattern() {
         java.lang.Object ref = schemaPattern_;
@@ -2653,7 +2697,7 @@ public final class Requests {
         }
       }
       /**
-       * <code>optional string schema_pattern = 2;</code>
+       * <code>string schema_pattern = 2;</code>
        */
       public com.google.protobuf.ByteString
           getSchemaPatternBytes() {
@@ -2669,7 +2713,7 @@ public final class Requests {
         }
       }
       /**
-       * <code>optional string schema_pattern = 2;</code>
+       * <code>string schema_pattern = 2;</code>
        */
       public Builder setSchemaPattern(
           java.lang.String value) {
@@ -2682,7 +2726,7 @@ public final class Requests {
         return this;
       }
       /**
-       * <code>optional string schema_pattern = 2;</code>
+       * <code>string schema_pattern = 2;</code>
        */
       public Builder clearSchemaPattern() {
         
@@ -2691,7 +2735,7 @@ public final class Requests {
         return this;
       }
       /**
-       * <code>optional string schema_pattern = 2;</code>
+       * <code>string schema_pattern = 2;</code>
        */
       public Builder setSchemaPatternBytes(
           com.google.protobuf.ByteString value) {
@@ -2707,7 +2751,7 @@ public final class Requests {
 
       private java.lang.Object tableNamePattern_ = "";
       /**
-       * <code>optional string table_name_pattern = 3;</code>
+       * <code>string table_name_pattern = 3;</code>
        */
       public java.lang.String getTableNamePattern() {
         java.lang.Object ref = tableNamePattern_;
@@ -2722,7 +2766,7 @@ public final class Requests {
         }
       }
       /**
-       * <code>optional string table_name_pattern = 3;</code>
+       * <code>string table_name_pattern = 3;</code>
        */
       public com.google.protobuf.ByteString
           getTableNamePatternBytes() {
@@ -2738,7 +2782,7 @@ public final class Requests {
         }
       }
       /**
-       * <code>optional string table_name_pattern = 3;</code>
+       * <code>string table_name_pattern = 3;</code>
        */
       public Builder setTableNamePattern(
           java.lang.String value) {
@@ -2751,7 +2795,7 @@ public final class Requests {
         return this;
       }
       /**
-       * <code>optional string table_name_pattern = 3;</code>
+       * <code>string table_name_pattern = 3;</code>
        */
       public Builder clearTableNamePattern() {
         
@@ -2760,7 +2804,7 @@ public final class Requests {
         return this;
       }
       /**
-       * <code>optional string table_name_pattern = 3;</code>
+       * <code>string table_name_pattern = 3;</code>
        */
       public Builder setTableNamePatternBytes(
           com.google.protobuf.ByteString value) {
@@ -2874,7 +2918,7 @@ public final class Requests {
        * Having an empty type_list is distinct from a null type_list
        * </pre>
        *
-       * <code>optional bool has_type_list = 6;</code>
+       * <code>bool has_type_list = 6;</code>
        */
       public boolean getHasTypeList() {
         return hasTypeList_;
@@ -2884,7 +2928,7 @@ public final class Requests {
        * Having an empty type_list is distinct from a null type_list
        * </pre>
        *
-       * <code>optional bool has_type_list = 6;</code>
+       * <code>bool has_type_list = 6;</code>
        */
       public Builder setHasTypeList(boolean value) {
         
@@ -2897,7 +2941,7 @@ public final class Requests {
        * Having an empty type_list is distinct from a null type_list
        * </pre>
        *
-       * <code>optional bool has_type_list = 6;</code>
+       * <code>bool has_type_list = 6;</code>
        */
       public Builder clearHasTypeList() {
         
@@ -2908,7 +2952,7 @@ public final class Requests {
 
       private java.lang.Object connectionId_ = "";
       /**
-       * <code>optional string connection_id = 7;</code>
+       * <code>string connection_id = 7;</code>
        */
       public java.lang.String getConnectionId() {
         java.lang.Object ref = connectionId_;
@@ -2923,7 +2967,7 @@ public final class Requests {
         }
       }
       /**
-       * <code>optional string connection_id = 7;</code>
+       * <code>string connection_id = 7;</code>
        */
       public com.google.protobuf.ByteString
           getConnectionIdBytes() {
@@ -2939,7 +2983,7 @@ public final class Requests {
         }
       }
       /**
-       * <code>optional string connection_id = 7;</code>
+       * <code>string connection_id = 7;</code>
        */
       public Builder setConnectionId(
           java.lang.String value) {
@@ -2952,7 +2996,7 @@ public final class Requests {
         return this;
       }
       /**
-       * <code>optional string connection_id = 7;</code>
+       * <code>string connection_id = 7;</code>
        */
       public Builder clearConnectionId() {
         
@@ -2961,7 +3005,7 @@ public final class Requests {
         return this;
       }
       /**
-       * <code>optional string connection_id = 7;</code>
+       * <code>string connection_id = 7;</code>
        */
       public Builder setConnectionIdBytes(
           com.google.protobuf.ByteString value) {
@@ -3028,11 +3072,11 @@ public final class Requests {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>optional string connection_id = 1;</code>
+     * <code>string connection_id = 1;</code>
      */
     java.lang.String getConnectionId();
     /**
-     * <code>optional string connection_id = 1;</code>
+     * <code>string connection_id = 1;</code>
      */
     com.google.protobuf.ByteString
         getConnectionIdBytes();
@@ -3113,7 +3157,7 @@ public final class Requests {
     public static final int CONNECTION_ID_FIELD_NUMBER = 1;
     private volatile java.lang.Object connectionId_;
     /**
-     * <code>optional string connection_id = 1;</code>
+     * <code>string connection_id = 1;</code>
      */
     public java.lang.String getConnectionId() {
       java.lang.Object ref = connectionId_;
@@ -3128,7 +3172,7 @@ public final class Requests {
       }
     }
     /**
-     * <code>optional string connection_id = 1;</code>
+     * <code>string connection_id = 1;</code>
      */
     public com.google.protobuf.ByteString
         getConnectionIdBytes() {
@@ -3196,7 +3240,7 @@ public final class Requests {
         return memoizedHashCode;
       }
       int hash = 41;
-      hash = (19 * hash) + getDescriptorForType().hashCode();
+      hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + CONNECTION_ID_FIELD_NUMBER;
       hash = (53 * hash) + getConnectionId().hashCode();
       hash = (29 * hash) + unknownFields.hashCode();
@@ -3204,6 +3248,17 @@ public final class Requests {
       return hash;
     }
 
+    public static org.apache.calcite.avatica.proto.Requests.TableTypesRequest parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static org.apache.calcite.avatica.proto.Requests.TableTypesRequest parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
     public static org.apache.calcite.avatica.proto.Requests.TableTypesRequest parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -3419,7 +3474,7 @@ public final class Requests {
 
       private java.lang.Object connectionId_ = "";
       /**
-       * <code>optional string connection_id = 1;</code>
+       * <code>string connection_id = 1;</code>
        */
       public java.lang.String getConnectionId() {
         java.lang.Object ref = connectionId_;
@@ -3434,7 +3489,7 @@ public final class Requests {
         }
       }
       /**
-       * <code>optional string connection_id = 1;</code>
+       * <code>string connection_id = 1;</code>
        */
       public com.google.protobuf.ByteString
           getConnectionIdBytes() {
@@ -3450,7 +3505,7 @@ public final class Requests {
         }
       }
       /**
-       * <code>optional string connection_id = 1;</code>
+       * <code>string connection_id = 1;</code>
        */
       public Builder setConnectionId(
           java.lang.String value) {
@@ -3463,7 +3518,7 @@ public final class Requests {
         return this;
       }
       /**
-       * <code>optional string connection_id = 1;</code>
+       * <code>string connection_id = 1;</code>
        */
       public Builder clearConnectionId() {
         
@@ -3472,7 +3527,7 @@ public final class Requests {
         return this;
       }
       /**
-       * <code>optional string connection_id = 1;</code>
+       * <code>string connection_id = 1;</code>
        */
       public Builder setConnectionIdBytes(
           com.google.protobuf.ByteString value) {
@@ -3539,51 +3594,51 @@ public final class Requests {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>optional string catalog = 1;</code>
+     * <code>string catalog = 1;</code>
      */
     java.lang.String getCatalog();
     /**
-     * <code>optional string catalog = 1;</code>
+     * <code>string catalog = 1;</code>
      */
     com.google.protobuf.ByteString
         getCatalogBytes();
 
     /**
-     * <code>optional string schema_pattern = 2;</code>
+     * <code>string schema_pattern = 2;</code>
      */
     java.lang.String getSchemaPattern();
     /**
-     * <code>optional string schema_pattern = 2;</code>
+     * <code>string schema_pattern = 2;</code>
      */
     com.google.protobuf.ByteString
         getSchemaPatternBytes();
 
     /**
-     * <code>optional string table_name_pattern = 3;</code>
+     * <code>string table_name_pattern = 3;</code>
      */
     java.lang.String getTableNamePattern();
     /**
-     * <code>optional string table_name_pattern = 3;</code>
+     * <code>string table_name_pattern = 3;</code>
      */
     com.google.protobuf.ByteString
         getTableNamePatternBytes();
 
     /**
-     * <code>optional string column_name_pattern = 4;</code>
+     * <code>string column_name_pattern = 4;</code>
      */
     java.lang.String getColumnNamePattern();
     /**
-     * <code>optional string column_name_pattern = 4;</code>
+     * <code>string column_name_pattern = 4;</code>
      */
     com.google.protobuf.ByteString
         getColumnNamePatternBytes();
 
     /**
-     * <code>optional string connection_id = 5;</code>
+     * <code>string connection_id = 5;</code>
      */
     java.lang.String getConnectionId();
     /**
-     * <code>optional string connection_id = 5;</code>
+     * <code>string connection_id = 5;</code>
      */
     com.google.protobuf.ByteString
         getConnectionIdBytes();
@@ -3693,7 +3748,7 @@ public final class Requests {
     public static final int CATALOG_FIELD_NUMBER = 1;
     private volatile java.lang.Object catalog_;
     /**
-     * <code>optional string catalog = 1;</code>
+     * <code>string catalog = 1;</code>
      */
     public java.lang.String getCatalog() {
       java.lang.Object ref = catalog_;
@@ -3708,7 +3763,7 @@ public final class Requests {
       }
     }
     /**
-     * <code>optional string catalog = 1;</code>
+     * <code>string catalog = 1;</code>
      */
     public com.google.protobuf.ByteString
         getCatalogBytes() {
@@ -3727,7 +3782,7 @@ public final class Requests {
     public static final int SCHEMA_PATTERN_FIELD_NUMBER = 2;
     private volatile java.lang.Object schemaPattern_;
     /**
-     * <code>optional string schema_pattern = 2;</code>
+     * <code>string schema_pattern = 2;</code>
      */
     public java.lang.String getSchemaPattern() {
       java.lang.Object ref = schemaPattern_;
@@ -3742,7 +3797,7 @@ public final class Requests {
       }
     }
     /**
-     * <code>optional string schema_pattern = 2;</code>
+     * <code>string schema_pattern = 2;</code>
      */
     public com.google.protobuf.ByteString
         getSchemaPatternBytes() {
@@ -3761,7 +3816,7 @@ public final class Requests {
     public static final int TABLE_NAME_PATTERN_FIELD_NUMBER = 3;
     private volatile java.lang.Object tableNamePattern_;
     /**
-     * <code>optional string table_name_pattern = 3;</code>
+     * <code>string table_name_pattern = 3;</code>
      */
     public java.lang.String getTableNamePattern() {
       java.lang.Object ref = tableNamePattern_;
@@ -3776,7 +3831,7 @@ public final class Requests {
       }
     }
     /**
-     * <code>optional string table_name_pattern = 3;</code>
+     * <code>string table_name_pattern = 3;</code>
      */
     public com.google.protobuf.ByteString
         getTableNamePatternBytes() {
@@ -3795,7 +3850,7 @@ public final class Requests {
     public static final int COLUMN_NAME_PATTERN_FIELD_NUMBER = 4;
     private volatile java.lang.Object columnNamePattern_;
     /**
-     * <code>optional string column_name_pattern = 4;</code>
+     * <code>string column_name_pattern = 4;</code>
      */
     public java.lang.String getColumnNamePattern() {
       java.lang.Object ref = columnNamePattern_;
@@ -3810,7 +3865,7 @@ public final class Requests {
       }
     }
     /**
-     * <code>optional string column_name_pattern = 4;</code>
+     * <code>string column_name_pattern = 4;</code>
      */
     public com.google.protobuf.ByteString
         getColumnNamePatternBytes() {
@@ -3829,7 +3884,7 @@ public final class Requests {
     public static final int CONNECTION_ID_FIELD_NUMBER = 5;
     private volatile java.lang.Object connectionId_;
     /**
-     * <code>optional string connection_id = 5;</code>
+     * <code>string connection_id = 5;</code>
      */
     public java.lang.String getConnectionId() {
       java.lang.Object ref = connectionId_;
@@ -3844,7 +3899,7 @@ public final class Requests {
       }
     }
     /**
-     * <code>optional string connection_id = 5;</code>
+     * <code>string connection_id = 5;</code>
      */
     public com.google.protobuf.ByteString
         getConnectionIdBytes() {
@@ -3944,7 +3999,7 @@ public final class Requests {
         return memoizedHashCode;
       }
       int hash = 41;
-      hash = (19 * hash) + getDescriptorForType().hashCode();
+      hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + CATALOG_FIELD_NUMBER;
       hash = (53 * hash) + getCatalog().hashCode();
       hash = (37 * hash) + SCHEMA_PATTERN_FIELD_NUMBER;
@@ -3960,6 +4015,17 @@ public final class Requests {
       return hash;
     }
 
+    public static org.apache.calcite.avatica.proto.Requests.ColumnsRequest parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static org.apache.calcite.avatica.proto.Requests.ColumnsRequest parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
     public static org.apache.calcite.avatica.proto.Requests.ColumnsRequest parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -4204,7 +4270,7 @@ public final class Requests {
 
       private java.lang.Object catalog_ = "";
       /**
-       * <code>optional string catalog = 1;</code>
+       * <code>string catalog = 1;</code>
        */
       public java.lang.String getCatalog() {
         java.lang.Object ref = catalog_;
@@ -4219,7 +4285,7 @@ public final class Requests {
         }
       }
       /**
-       * <code>optional string catalog = 1;</code>
+       * <code>string catalog = 1;</code>
        */
       public com.google.protobuf.ByteString
           getCatalogBytes() {
@@ -4235,7 +4301,7 @@ public final class Requests {
         }
       }
       /**
-       * <code>optional string catalog = 1;</code>
+       * <code>string catalog = 1;</code>
        */
       public Builder setCatalog(
           java.lang.String value) {
@@ -4248,7 +4314,7 @@ public final class Requests {
         return this;
       }
       /**
-       * <code>optional string catalog = 1;</code>
+       * <code>string catalog = 1;</code>
        */
       public Builder clearCatalog() {
         
@@ -4257,7 +4323,7 @@ public final class Requests {
         return this;
       }
       /**
-       * <code>optional string catalog = 1;</code>
+       * <code>string catalog = 1;</code>
        */
       public Builder setCatalogBytes(
           com.google.protobuf.ByteString value) {
@@ -4273,7 +4339,7 @@ public final class Requests {
 
       private java.lang.Object schemaPattern_ = "";
       /**
-       * <code>optional string schema_pattern = 2;</code>
+       * <code>string schema_pattern = 2;</code>
        */
       public java.lang.String getSchemaPattern() {
         java.lang.Object ref = schemaPattern_;
@@ -4288,7 +4354,7 @@ public final class Requests {
         }
       }
       /**
-       * <code>optional string schema_pattern = 2;</code>
+       * <code>string schema_pattern = 2;</code>
        */
       public com.google.protobuf.ByteString
           getSchemaPatternBytes() {
@@ -4304,7 +4370,7 @@ public final class Requests {
         }
       }
       /**
-       * <code>optional string schema_pattern = 2;</code>
+       * <code>string schema_pattern = 2;</code>
        */
       public Builder setSchemaPattern(
           java.lang.String value) {
@@ -4317,7 +4383,7 @@ public final class Requests {
         return this;
       }
       /**
-       * <code>optional string schema_pattern = 2;</code>
+       * <code>string schema_pattern = 2;</code>
        */
       public Builder clearSchemaPattern() {
         
@@ -4326,7 +4392,7 @@ public final class Requests {
         return this;
       }
       /**
-       * <code>optional string schema_pattern = 2;</code>
+       * <code>string schema_pattern = 2;</code>
        */
       public Builder setSchemaPatternBytes(
           com.google.protobuf.ByteString value) {
@@ -4342,7 +4408,7 @@ public final class Requests {
 
       private java.lang.Object tableNamePattern_ = "";
       /**
-       * <code>optional string table_name_pattern = 3;</code>
+       * <code>string table_name_pattern = 3;</code>
        */
       public java.lang.String getTableNamePattern() {
         java.lang.Object ref = tableNamePattern_;
@@ -4357,7 +4423,7 @@ public final class Requests {
         }
       }
       /**
-       * <code>optional string table_name_pattern = 3;</code>
+       * <code>string table_name_pattern = 3;</code>
        */
       public com.google.protobuf.ByteString
           getTableNamePatternBytes() {
@@ -4373,7 +4439,7 @@ public final class Requests {
         }
       }
       /**
-       * <code>optional string table_name_pattern = 3;</code>
+       * <code>string table_name_pattern = 3;</code>
        */
       public Builder setTableNamePattern(
           java.lang.String value) {
@@ -4386,7 +4452,7 @@ public final class Requests {
         return this;
       }
       /**
-       * <code>optional string table_name_pattern = 3;</code>
+       * <code>string table_name_pattern = 3;</code>
        */
       public Builder clearTableNamePattern() {
         
@@ -4395,7 +4461,7 @@ public final class Requests {
         return this;
       }
       /**
-       * <code>optional string table_name_pattern = 3;</code>
+       * <code>string table_name_pattern = 3;</code>
        */
       public Builder setTableNamePatternBytes(
           com.google.protobuf.ByteString value) {
@@ -4411,7 +4477,7 @@ public final class Requests {
 
       private java.lang.Object columnNamePattern_ = "";
       /**
-       * <code>optional string column_name_pattern = 4;</code>
+       * <code>string column_name_pattern = 4;</code>
        */
       public java.lang.String getColumnNamePattern() {
         java.lang.Object ref = columnNamePattern_;
@@ -4426,7 +4492,7 @@ public final class Requests {
         }
       }
       /**
-       * <code>optional string column_name_pattern = 4;</code>
+       * <code>string column_name_pattern = 4;</code>
        */
       public com.google.protobuf.ByteString
           getColumnNamePatternBytes() {
@@ -4442,7 +4508,7 @@ public final class Requests {
         }
       }
       /**
-       * <code>optional string column_name_pattern = 4;</code>
+       * <code>string column_name_pattern = 4;</code>
        */
       public Builder setColumnNamePattern(
           java.lang.String value) {
@@ -4455,7 +4521,7 @@ public final class Requests {
         return this;
       }
       /**
-       * <code>optional string column_name_pattern = 4;</code>
+       * <code>string column_name_pattern = 4;</code>
        */
       public Builder clearColumnNamePattern() {
         
@@ -4464,7 +4530,7 @@ public final class Requests {
         return this;
       }
       /**
-       * <code>optional string column_name_pattern = 4;</code>
+       * <code>string column_name_pattern = 4;</code>
        */
       public Builder setColumnNamePatternBytes(
           com.google.protobuf.ByteString value) {
@@ -4480,7 +4546,7 @@ public final class Requests {
 
       private java.lang.Object connectionId_ = "";
       /**
-       * <code>optional string connection_id = 5;</code>
+       * <code>string connection_id = 5;</code>
        */
       public java.lang.String getConnectionId() {
         java.lang.Object ref = connectionId_;
@@ -4495,7 +4561,7 @@ public final class Requests {
         }
       }
       /**
-       * <code>optional string connection_id = 5;</code>
+       * <code>string connection_id = 5;</code>
        */
       public com.google.protobuf.ByteString
           getConnectionIdBytes() {
@@ -4511,7 +4577,7 @@ public final class Requests {
         }
       }
       /**
-       * <code>optional string connection_id = 5;</code>
+       * <code>string connection_id = 5;</code>
        */
       public Builder setConnectionId(
           java.lang.String value) {
@@ -4524,7 +4590,7 @@ public final class Requests {
         return this;
       }
       /**
-       * <code>optional string connection_id = 5;</code>
+       * <code>string connection_id = 5;</code>
        */
       public Builder clearConnectionId() {
         
@@ -4533,7 +4599,7 @@ public final class Requests {
         return this;
       }
       /**
-       * <code>optional string connection_id = 5;</code>
+       * <code>string connection_id = 5;</code>
        */
       public Builder setConnectionIdBytes(
           com.google.protobuf.ByteString value) {
@@ -4600,11 +4666,11 @@ public final class Requests {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>optional string connection_id = 1;</code>
+     * <code>string connection_id = 1;</code>
      */
     java.lang.String getConnectionId();
     /**
-     * <code>optional string connection_id = 1;</code>
+     * <code>string connection_id = 1;</code>
      */
     com.google.protobuf.ByteString
         getConnectionIdBytes();
@@ -4685,7 +4751,7 @@ public final class Requests {
     public static final int CONNECTION_ID_FIELD_NUMBER = 1;
     private volatile java.lang.Object connectionId_;
     /**
-     * <code>optional string connection_id = 1;</code>
+     * <code>string connection_id = 1;</code>
      */
     public java.lang.String getConnectionId() {
       java.lang.Object ref = connectionId_;
@@ -4700,7 +4766,7 @@ public final class Requests {
       }
     }
     /**
-     * <code>optional string connection_id = 1;</code>
+     * <code>string connection_id = 1;</code>
      */
     public com.google.protobuf.ByteString
         getConnectionIdBytes() {
@@ -4768,7 +4834,7 @@ public final class Requests {
         return memoizedHashCode;
       }
       int hash = 41;
-      hash = (19 * hash) + getDescriptorForType().hashCode();
+      hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + CONNECTION_ID_FIELD_NUMBER;
       hash = (53 * hash) + getConnectionId().hashCode();
       hash = (29 * hash) + unknownFields.hashCode();
@@ -4776,6 +4842,17 @@ public final class Requests {
       return hash;
     }
 
+    public static org.apache.calcite.avatica.proto.Requests.TypeInfoRequest parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static org.apache.calcite.avatica.proto.Requests.TypeInfoRequest parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
     public static org.apache.calcite.avatica.proto.Requests.TypeInfoRequest parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -4991,7 +5068,7 @@ public final class Requests {
 
       private java.lang.Object connectionId_ = "";
       /**
-       * <code>optional string connection_id = 1;</code>
+       * <code>string connection_id = 1;</code>
        */
       public java.lang.String getConnectionId() {
         java.lang.Object ref = connectionId_;
@@ -5006,7 +5083,7 @@ public final class Requests {
         }
       }
       /**
-       * <code>optional string connection_id = 1;</code>
+       * <code>string connection_id = 1;</code>
        */
       public com.google.protobuf.ByteString
           getConnectionIdBytes() {
@@ -5022,7 +5099,7 @@ public final class Requests {
         }
       }
       /**
-       * <code>optional string connection_id = 1;</code>
+       * <code>string connection_id = 1;</code>
        */
       public Builder setConnectionId(
           java.lang.String value) {
@@ -5035,7 +5112,7 @@ public final class Requests {
         return this;
       }
       /**
-       * <code>optional string connection_id = 1;</code>
+       * <code>string connection_id = 1;</code>
        */
       public Builder clearConnectionId() {
         
@@ -5044,7 +5121,7 @@ public final class Requests {
         return this;
       }
       /**
-       * <code>optional string connection_id = 1;</code>
+       * <code>string connection_id = 1;</code>
        */
       public Builder setConnectionIdBytes(
           com.google.protobuf.ByteString value) {
@@ -5111,21 +5188,21 @@ public final class Requests {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>optional string connection_id = 1;</code>
+     * <code>string connection_id = 1;</code>
      */
     java.lang.String getConnectionId();
     /**
-     * <code>optional string connection_id = 1;</code>
+     * <code>string connection_id = 1;</code>
      */
     com.google.protobuf.ByteString
         getConnectionIdBytes();
 
     /**
-     * <code>optional string sql = 2;</code>
+     * <code>string sql = 2;</code>
      */
     java.lang.String getSql();
     /**
-     * <code>optional string sql = 2;</code>
+     * <code>string sql = 2;</code>
      */
     com.google.protobuf.ByteString
         getSqlBytes();
@@ -5135,12 +5212,12 @@ public final class Requests {
      * Deprecated
      * </pre>
      *
-     * <code>optional uint64 max_row_count = 3;</code>
+     * <code>uint64 max_row_count = 3;</code>
      */
     long getMaxRowCount();
 
     /**
-     * <code>optional uint32 statement_id = 4;</code>
+     * <code>uint32 statement_id = 4;</code>
      */
     int getStatementId();
 
@@ -5149,7 +5226,7 @@ public final class Requests {
      * The maximum number of rows that will be allowed for this query
      * </pre>
      *
-     * <code>optional int64 max_rows_total = 5;</code>
+     * <code>int64 max_rows_total = 5;</code>
      */
     long getMaxRowsTotal();
 
@@ -5158,7 +5235,7 @@ public final class Requests {
      * The maximum number of rows that will be returned in the
      * </pre>
      *
-     * <code>optional int32 first_frame_max_size = 6;</code>
+     * <code>int32 first_frame_max_size = 6;</code>
      */
     int getFirstFrameMaxSize();
   }
@@ -5269,7 +5346,7 @@ public final class Requests {
     public static final int CONNECTION_ID_FIELD_NUMBER = 1;
     private volatile java.lang.Object connectionId_;
     /**
-     * <code>optional string connection_id = 1;</code>
+     * <code>string connection_id = 1;</code>
      */
     public java.lang.String getConnectionId() {
       java.lang.Object ref = connectionId_;
@@ -5284,7 +5361,7 @@ public final class Requests {
       }
     }
     /**
-     * <code>optional string connection_id = 1;</code>
+     * <code>string connection_id = 1;</code>
      */
     public com.google.protobuf.ByteString
         getConnectionIdBytes() {
@@ -5303,7 +5380,7 @@ public final class Requests {
     public static final int SQL_FIELD_NUMBER = 2;
     private volatile java.lang.Object sql_;
     /**
-     * <code>optional string sql = 2;</code>
+     * <code>string sql = 2;</code>
      */
     public java.lang.String getSql() {
       java.lang.Object ref = sql_;
@@ -5318,7 +5395,7 @@ public final class Requests {
       }
     }
     /**
-     * <code>optional string sql = 2;</code>
+     * <code>string sql = 2;</code>
      */
     public com.google.protobuf.ByteString
         getSqlBytes() {
@@ -5341,7 +5418,7 @@ public final class Requests {
      * Deprecated
      * </pre>
      *
-     * <code>optional uint64 max_row_count = 3;</code>
+     * <code>uint64 max_row_count = 3;</code>
      */
     public long getMaxRowCount() {
       return maxRowCount_;
@@ -5350,7 +5427,7 @@ public final class Requests {
     public static final int STATEMENT_ID_FIELD_NUMBER = 4;
     private int statementId_;
     /**
-     * <code>optional uint32 statement_id = 4;</code>
+     * <code>uint32 statement_id = 4;</code>
      */
     public int getStatementId() {
       return statementId_;
@@ -5363,7 +5440,7 @@ public final class Requests {
      * The maximum number of rows that will be allowed for this query
      * </pre>
      *
-     * <code>optional int64 max_rows_total = 5;</code>
+     * <code>int64 max_rows_total = 5;</code>
      */
     public long getMaxRowsTotal() {
       return maxRowsTotal_;
@@ -5376,7 +5453,7 @@ public final class Requests {
      * The maximum number of rows that will be returned in the
      * </pre>
      *
-     * <code>optional int32 first_frame_max_size = 6;</code>
+     * <code>int32 first_frame_max_size = 6;</code>
      */
     public int getFirstFrameMaxSize() {
       return firstFrameMaxSize_;
@@ -5478,7 +5555,7 @@ public final class Requests {
         return memoizedHashCode;
       }
       int hash = 41;
-      hash = (19 * hash) + getDescriptorForType().hashCode();
+      hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + CONNECTION_ID_FIELD_NUMBER;
       hash = (53 * hash) + getConnectionId().hashCode();
       hash = (37 * hash) + SQL_FIELD_NUMBER;
@@ -5498,6 +5575,17 @@ public final class Requests {
       return hash;
     }
 
+    public static org.apache.calcite.avatica.proto.Requests.PrepareAndExecuteRequest parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static org.apache.calcite.avatica.proto.Requests.PrepareAndExecuteRequest parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
     public static org.apache.calcite.avatica.proto.Requests.PrepareAndExecuteRequest parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -5744,7 +5832,7 @@ public final class Requests {
 
       private java.lang.Object connectionId_ = "";
       /**
-       * <code>optional string connection_id = 1;</code>
+       * <code>string connection_id = 1;</code>
        */
       public java.lang.String getConnectionId() {
         java.lang.Object ref = connectionId_;
@@ -5759,7 +5847,7 @@ public final class Requests {
         }
       }
       /**
-       * <code>optional string connection_id = 1;</code>
+       * <code>string connection_id = 1;</code>
        */
       public com.google.protobuf.ByteString
           getConnectionIdBytes() {
@@ -5775,7 +5863,7 @@ public final class Requests {
         }
       }
       /**
-       * <code>optional string connection_id = 1;</code>
+       * <code>string connection_id = 1;</code>
        */
       public Builder setConnectionId(
           java.lang.String value) {
@@ -5788,7 +5876,7 @@ public final class Requests {
         return this;
       }
       /**
-       * <code>optional string connection_id = 1;</code>
+       * <code>string connection_id = 1;</code>
        */
       public Builder clearConnectionId() {
         
@@ -5797,7 +5885,7 @@ public final class Requests {
         return this;
       }
       /**
-       * <code>optional string connection_id = 1;</code>
+       * <code>string connection_id = 1;</code>
        */
       public Builder setConnectionIdBytes(
           com.google.protobuf.ByteString value) {
@@ -5813,7 +5901,7 @@ public final class Requests {
 
       private java.lang.Object sql_ = "";
       /**
-       * <code>optional string sql = 2;</code>
+       * <code>string sql = 2;</code>
        */
       public java.lang.String getSql() {
         java.lang.Object ref = sql_;
@@ -5828,7 +5916,7 @@ public final class Requests {
         }
       }
       /**
-       * <code>optional string sql = 2;</code>
+       * <code>string sql = 2;</code>
        */
       public com.google.protobuf.ByteString
           getSqlBytes() {
@@ -5844,7 +5932,7 @@ public final class Requests {
         }
       }
       /**
-       * <code>optional string sql = 2;</code>
+       * <code>string sql = 2;</code>
        */
       public Builder setSql(
           java.lang.String value) {
@@ -5857,7 +5945,7 @@ public final class Requests {
         return this;
       }
       /**
-       * <code>optional string sql = 2;</code>
+       * <code>string sql = 2;</code>
        */
       public Builder clearSql() {
         
@@ -5866,7 +5954,7 @@ public final class Requests {
         return this;
       }
       /**
-       * <code>optional string sql = 2;</code>
+       * <code>string sql = 2;</code>
        */
       public Builder setSqlBytes(
           com.google.protobuf.ByteString value) {
@@ -5886,7 +5974,7 @@ public final class Requests {
        * Deprecated
        * </pre>
        *
-       * <code>optional uint64 max_row_count = 3;</code>
+       * <code>uint64 max_row_count = 3;</code>
        */
       public long getMaxRowCount() {
         return maxRowCount_;
@@ -5896,7 +5984,7 @@ public final class Requests {
        * Deprecated
        * </pre>
        *
-       * <code>optional uint64 max_row_count = 3;</code>
+       * <code>uint64 max_row_count = 3;</code>
        */
       public Builder setMaxRowCount(long value) {
         
@@ -5909,7 +5997,7 @@ public final class Requests {
        * Deprecated
        * </pre>
        *
-       * <code>optional uint64 max_row_count = 3;</code>
+       * <code>uint64 max_row_count = 3;</code>
        */
       public Builder clearMaxRowCount() {
         
@@ -5920,13 +6008,13 @@ public final class Requests {
 
       private int statementId_ ;
       /**
-       * <code>optional uint32 statement_id = 4;</code>
+       * <code>uint32 statement_id = 4;</code>
        */
       public int getStatementId() {
         return statementId_;
       }
       /**
-       * <code>optional uint32 statement_id = 4;</code>
+       * <code>uint32 statement_id = 4;</code>
        */
       public Builder setStatementId(int value) {
         
@@ -5935,7 +6023,7 @@ public final class Requests {
         return this;
       }
       /**
-       * <code>optional uint32 statement_id = 4;</code>
+       * <code>uint32 statement_id = 4;</code>
        */
       public Builder clearStatementId() {
         
@@ -5950,7 +6038,7 @@ public final class Requests {
        * The maximum number of rows that will be allowed for this query
        * </pre>
        *
-       * <code>optional int64 max_rows_total = 5;</code>
+       * <code>int64 max_rows_total = 5;</code>
        */
       public long getMaxRowsTotal() {
         return maxRowsTotal_;
@@ -5960,7 +6048,7 @@ public final class Requests {
        * The maximum number of rows that will be allowed for this query
        * </pre>
        *
-       * <code>optional int64 max_rows_total = 5;</code>
+       * <code>int64 max_rows_total = 5;</code>
        */
       public Builder setMaxRowsTotal(long value) {
         
@@ -5973,7 +6061,7 @@ public final class Requests {
        * The maximum number of rows that will be allowed for this query
        * </pre>
        *
-       * <code>optional int64 max_rows_total = 5;</code>
+       * <code>int64 max_rows_total = 5;</code>
        */
       public Builder clearMaxRowsTotal() {
         
@@ -5988,7 +6076,7 @@ public final class Requests {
        * The maximum number of rows that will be returned in the
        * </pre>
        *
-       * <code>optional int32 first_frame_max_size = 6;</code>
+       * <code>int32 first_frame_max_size = 6;</code>
        */
       public int getFirstFrameMaxSize() {
         return firstFrameMaxSize_;
@@ -5998,7 +6086,7 @@ public final class Requests {
        * The maximum number of rows that will be returned in the
        * </pre>
        *
-       * <code>optional int32 first_frame_max_size = 6;</code>
+       * <code>int32 first_frame_max_size = 6;</code>
        */
       public Builder setFirstFrameMaxSize(int value) {
         
@@ -6011,7 +6099,7 @@ public final class Requests {
        * The maximum number of rows that will be returned in the
        * </pre>
        *
-       * <code>optional int32 first_frame_max_size = 6;</code>
+       * <code>int32 first_frame_max_size = 6;</code>
        */
       public Builder clearFirstFrameMaxSize() {
         
@@ -6073,21 +6161,21 @@ public final class Requests {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>optional string connection_id = 1;</code>
+     * <code>string connection_id = 1;</code>
      */
     java.lang.String getConnectionId();
     /**
-     * <code>optional string connection_id = 1;</code>
+     * <code>string connection_id = 1;</code>
      */
     com.google.protobuf.ByteString
         getConnectionIdBytes();
 
     /**
-     * <code>optional string sql = 2;</code>
+     * <code>string sql = 2;</code>
      */
     java.lang.String getSql();
     /**
-     * <code>optional string sql = 2;</code>
+     * <code>string sql = 2;</code>
      */
     com.google.protobuf.ByteString
         getSqlBytes();
@@ -6097,7 +6185,7 @@ public final class Requests {
      * Deprecated
      * </pre>
      *
-     * <code>optional uint64 max_row_count = 3;</code>
+     * <code>uint64 max_row_count = 3;</code>
      */
     long getMaxRowCount();
 
@@ -6106,7 +6194,7 @@ public final class Requests {
      * The maximum number of rows that will be allowed for this query
      * </pre>
      *
-     * <code>optional int64 max_rows_total = 4;</code>
+     * <code>int64 max_rows_total = 4;</code>
      */
     long getMaxRowsTotal();
   }
@@ -6205,7 +6293,7 @@ public final class Requests {
     public static final int CONNECTION_ID_FIELD_NUMBER = 1;
     private volatile java.lang.Object connectionId_;
     /**
-     * <code>optional string connection_id = 1;</code>
+     * <code>string connection_id = 1;</code>
      */
     public java.lang.String getConnectionId() {
       java.lang.Object ref = connectionId_;
@@ -6220,7 +6308,7 @@ public final class Requests {
       }
     }
     /**
-     * <code>optional string connection_id = 1;</code>
+     * <code>string connection_id = 1;</code>
      */
     public com.google.protobuf.ByteString
         getConnectionIdBytes() {
@@ -6239,7 +6327,7 @@ public final class Requests {
     public static final int SQL_FIELD_NUMBER = 2;
     private volatile java.lang.Object sql_;
     /**
-     * <code>optional string sql = 2;</code>
+     * <code>string sql = 2;</code>
      */
     public java.lang.String getSql() {
       java.lang.Object ref = sql_;
@@ -6254,7 +6342,7 @@ public final class Requests {
       }
     }
     /**
-     * <code>optional string sql = 2;</code>
+     * <code>string sql = 2;</code>
      */
     public com.google.protobuf.ByteString
         getSqlBytes() {
@@ -6277,7 +6365,7 @@ public final class Requests {
      * Deprecated
      * </pre>
      *
-     * <code>optional uint64 max_row_count = 3;</code>
+     * <code>uint64 max_row_count = 3;</code>
      */
     public long getMaxRowCount() {
       return maxRowCount_;
@@ -6290,7 +6378,7 @@ public final class Requests {
      * The maximum number of rows that will be allowed for this query
      * </pre>
      *
-     * <code>optional int64 max_rows_total = 4;</code>
+     * <code>int64 max_rows_total = 4;</code>
      */
     public long getMaxRowsTotal() {
       return maxRowsTotal_;
@@ -6374,7 +6462,7 @@ public final class Requests {
         return memoizedHashCode;
       }
       int hash = 41;
-      hash = (19 * hash) + getDescriptorForType().hashCode();
+      hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + CONNECTION_ID_FIELD_NUMBER;
       hash = (53 * hash) + getConnectionId().hashCode();
       hash = (37 * hash) + SQL_FIELD_NUMBER;
@@ -6390,6 +6478,17 @@ public final class Requests {
       return hash;
     }
 
+    public static org.apache.calcite.avatica.proto.Requests.PrepareRequest parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static org.apache.calcite.avatica.proto.Requests.PrepareRequest parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
     public static org.apache.calcite.avatica.proto.Requests.PrepareRequest parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -6624,7 +6723,7 @@ public final class Requests {
 
       private java.lang.Object connectionId_ = "";
       /**
-       * <code>optional string connection_id = 1;</code>
+       * <code>string connection_id = 1;</code>
        */
       public java.lang.String getConnectionId() {
         java.lang.Object ref = connectionId_;
@@ -6639,7 +6738,7 @@ public final class Requests {
         }
       }
       /**
-       * <code>optional string connection_id = 1;</code>
+       * <code>string connection_id = 1;</code>
        */
       public com.google.protobuf.ByteString
           getConnectionIdBytes() {
@@ -6655,7 +6754,7 @@ public final class Requests {
         }
       }
       /**
-       * <code>optional string connection_id = 1;</code>
+       * <code>string connection_id = 1;</code>
        */
       public Builder setConnectionId(
           java.lang.String value) {
@@ -6668,7 +6767,7 @@ public final class Requests {
         return this;
       }
       /**
-       * <code>optional string connection_id = 1;</code>
+       * <code>string connection_id = 1;</code>
        */
       public Builder clearConnectionId() {
         
@@ -6677,7 +6776,7 @@ public final class Requests {
         return this;
       }
       /**
-       * <code>optional string connection_id = 1;</code>
+       * <code>string connection_id = 1;</code>
        */
       public Builder setConnectionIdBytes(
           com.google.protobuf.ByteString value) {
@@ -6693,7 +6792,7 @@ public final class Requests {
 
       private java.lang.Object sql_ = "";
       /**
-       * <code>optional string sql = 2;</code>
+       * <code>string sql = 2;</code>
        */
       public java.lang.String getSql() {
         java.lang.Object ref = sql_;
@@ -6708,7 +6807,7 @@ public final class Requests {
         }
       }
       /**
-       * <code>optional string sql = 2;</code>
+       * <code>string sql = 2;</code>
        */
       public com.google.protobuf.ByteString
           getSqlBytes() {
@@ -6724,7 +6823,7 @@ public final class Requests {
         }
       }
       /**
-       * <code>optional string sql = 2;</code>
+       * <code>string sql = 2;</code>
        */
       public Builder setSql(
           java.lang.String value) {
@@ -6737,7 +6836,7 @@ public final class Requests {
         return this;
       }
       /**
-       * <code>optional string sql = 2;</code>
+       * <code>string sql = 2;</code>
        */
       public Builder clearSql() {
         
@@ -6746,7 +6845,7 @@ public final class Requests {
         return this;
       }
       /**
-       * <code>optional string sql = 2;</code>
+       * <code>string sql = 2;</code>
        */
       public Builder setSqlBytes(
           com.google.protobuf.ByteString value) {
@@ -6766,7 +6865,7 @@ public final class Requests {
        * Deprecated
        * </pre>
        *
-       * <code>optional uint64 max_row_count = 3;</code>
+       * <code>uint64 max_row_count = 3;</code>
        */
       public long getMaxRowCount() {
         return maxRowCount_;
@@ -6776,7 +6875,7 @@ public final class Requests {
        * Deprecated
        * </pre>
        *
-       * <code>optional uint64 max_row_count = 3;</code>
+       * <code>uint64 max_row_count = 3;</code>
        */
       public Builder setMaxRowCount(long value) {
         
@@ -6789,7 +6888,7 @@ public final class Requests {
        * Deprecated
        * </pre>
        *
-       * <code>optional uint64 max_row_count = 3;</code>
+       * <code>uint64 max_row_count = 3;</code>
        */
       public Builder clearMaxRowCount() {
         
@@ -6804,7 +6903,7 @@ public final class Requests {
        * The maximum number of rows that will be allowed for this query
        * </pre>
        *
-       * <code>optional int64 max_rows_total = 4;</code>
+       * <code>int64 max_rows_total = 4;</code>
        */
       public long getMaxRowsTotal() {
         return maxRowsTotal_;
@@ -6814,7 +6913,7 @@ public final class Requests {
        * The maximum number of rows that will be allowed for this query
        * </pre>
        *
-       * <code>optional int64 max_rows_total = 4;</code>
+       * <code>int64 max_rows_total = 4;</code>
        */
       public Builder setMaxRowsTotal(long value) {
         
@@ -6827,7 +6926,7 @@ public final class Requests {
        * The maximum number of rows that will be allowed for this query
        * </pre>
        *
-       * <code>optional int64 max_rows_total = 4;</code>
+       * <code>int64 max_rows_total = 4;</code>
        */
       public Builder clearMaxRowsTotal() {
         
@@ -6889,22 +6988,22 @@ public final class Requests {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>optional string connection_id = 1;</code>
+     * <code>string connection_id = 1;</code>
      */
     java.lang.String getConnectionId();
     /**
-     * <code>optional string connection_id = 1;</code>
+     * <code>string connection_id = 1;</code>
      */
     com.google.protobuf.ByteString
         getConnectionIdBytes();
 
     /**
-     * <code>optional uint32 statement_id = 2;</code>
+     * <code>uint32 statement_id = 2;</code>
      */
     int getStatementId();
 
     /**
-     * <code>optional uint64 offset = 3;</code>
+     * <code>uint64 offset = 3;</code>
      */
     long getOffset();
 
@@ -6913,12 +7012,12 @@ public final class Requests {
      * Maximum number of rows to be returned in the frame. Negative means no limit. Deprecated!
      * </pre>
      *
-     * <code>optional uint32 fetch_max_row_count = 4;</code>
+     * <code>uint32 fetch_max_row_count = 4;</code>
      */
     int getFetchMaxRowCount();
 
     /**
-     * <code>optional int32 frame_max_size = 5;</code>
+     * <code>int32 frame_max_size = 5;</code>
      */
     int getFrameMaxSize();
   }
@@ -7022,7 +7121,7 @@ public final class Requests {
     public static final int CONNECTION_ID_FIELD_NUMBER = 1;
     private volatile java.lang.Object connectionId_;
     /**
-     * <code>optional string connection_id = 1;</code>
+     * <code>string connection_id = 1;</code>
      */
     public java.lang.String getConnectionId() {
       java.lang.Object ref = connectionId_;
@@ -7037,7 +7136,7 @@ public final class Requests {
       }
     }
     /**
-     * <code>optional string connection_id = 1;</code>
+     * <code>string connection_id = 1;</code>
      */
     public com.google.protobuf.ByteString
         getConnectionIdBytes() {
@@ -7056,7 +7155,7 @@ public final class Requests {
     public static final int STATEMENT_ID_FIELD_NUMBER = 2;
     private int statementId_;
     /**
-     * <code>optional uint32 statement_id = 2;</code>
+     * <code>uint32 statement_id = 2;</code>
      */
     public int getStatementId() {
       return statementId_;
@@ -7065,7 +7164,7 @@ public final class Requests {
     public static final int OFFSET_FIELD_NUMBER = 3;
     private long offset_;
     /**
-     * <code>optional uint64 offset = 3;</code>
+     * <code>uint64 offset = 3;</code>
      */
     public long getOffset() {
       return offset_;
@@ -7078,7 +7177,7 @@ public final class Requests {
      * Maximum number of rows to be returned in the frame. Negative means no limit. Deprecated!
      * </pre>
      *
-     * <code>optional uint32 fetch_max_row_count = 4;</code>
+     * <code>uint32 fetch_max_row_count = 4;</code>
      */
     public int getFetchMaxRowCount() {
       return fetchMaxRowCount_;
@@ -7087,7 +7186,7 @@ public final class Requests {
     public static final int FRAME_MAX_SIZE_FIELD_NUMBER = 5;
     private int frameMaxSize_;
     /**
-     * <code>optional int32 frame_max_size = 5;</code>
+     * <code>int32 frame_max_size = 5;</code>
      */
     public int getFrameMaxSize() {
       return frameMaxSize_;
@@ -7181,7 +7280,7 @@ public final class Requests {
         return memoizedHashCode;
       }
       int hash = 41;
-      hash = (19 * hash) + getDescriptorForType().hashCode();
+      hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + CONNECTION_ID_FIELD_NUMBER;
       hash = (53 * hash) + getConnectionId().hashCode();
       hash = (37 * hash) + STATEMENT_ID_FIELD_NUMBER;
@@ -7198,6 +7297,17 @@ public final class Requests {
       return hash;
     }
 
+    public static org.apache.calcite.avatica.proto.Requests.FetchRequest parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static org.apache.calcite.avatica.proto.Requests.FetchRequest parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
     public static org.apache.calcite.avatica.proto.Requests.FetchRequest parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -7437,7 +7547,7 @@ public final class Requests {
 
       private java.lang.Object connectionId_ = "";
       /**
-       * <code>optional string connection_id = 1;</code>
+       * <code>string connection_id = 1;</code>
        */
       public java.lang.String getConnectionId() {
         java.lang.Object ref = connectionId_;
@@ -7452,7 +7562,7 @@ public final class Requests {
         }
       }
       /**
-       * <code>optional string connection_id = 1;</code>
+       * <code>string connection_id = 1;</code>
        */
       public com.google.protobuf.ByteString
           getConnectionIdBytes() {
@@ -7468,7 +7578,7 @@ public final class Requests {
         }
       }
       /**
-       * <code>optional string connection_id = 1;</code>
+       * <code>string connection_id = 1;</code>
        */
       public Builder setConnectionId(
           java.lang.String value) {
@@ -7481,7 +7591,7 @@ public final class Requests {
         return this;
       }
       /**
-       * <code>optional string connection_id = 1;</code>
+       * <code>string connection_id = 1;</code>
        */
       public Builder clearConnectionId() {
         
@@ -7490,7 +7600,7 @@ public final class Requests {
         return this;
       }
       /**
-       * <code>optional string connection_id = 1;</code>
+       * <code>string connection_id = 1;</code>
        */
       public Builder setConnectionIdBytes(
           com.google.protobuf.ByteString value) {
@@ -7506,13 +7616,13 @@ public final class Requests {
 
       private int statementId_ ;
       /**
-       * <code>optional uint32 statement_id = 2;</code>
+       * <code>uint32 statement_id = 2;</code>
        */
       public int getStatementId() {
         return statementId_;
       }
       /**
-       * <code>optional uint32 statement_id = 2;</code>
+       * <code>uint32 statement_id = 2;</code>
        */
       public Builder setStatementId(int value) {
         
@@ -7521,7 +7631,7 @@ public final class Requests {
         return this;
       }
       /**
-       * <code>optional uint32 statement_id = 2;</code>
+       * <code>uint32 statement_id = 2;</code>
        */
       public Builder clearStatementId() {
         
@@ -7532,13 +7642,13 @@ public final class Requests {
 
       private long offset_ ;
       /**
-       * <code>optional uint64 offset = 3;</code>
+       * <code>uint64 offset = 3;</code>
        */
       public long getOffset() {
         return offset_;
       }
       /**
-       * <code>optional uint64 offset = 3;</code>
+       * <code>uint64 offset = 3;</code>
        */
       public Builder setOffset(long value) {
         
@@ -7547,7 +7657,7 @@ public final class Requests {
         return this;
       }
       /**
-       * <code>optional uint64 offset = 3;</code>
+       * <code>uint64 offset = 3;</code>
        */
       public Builder clearOffset() {
         
@@ -7562,7 +7672,7 @@ public final class Requests {
        * Maximum number of rows to be returned in the frame. Negative means no limit. Deprecated!
        * </pre>
        *
-       * <code>optional uint32 fetch_max_row_count = 4;</code>
+       * <code>uint32 fetch_max_row_count = 4;</code>
        */
       public int getFetchMaxRowCount() {
         return fetchMaxRowCount_;
@@ -7572,7 +7682,7 @@ public final class Requests {
        * Maximum number of rows to be returned in the frame. Negative means no limit. Deprecated!
        * </pre>
        *
-       * <code>optional uint32 fetch_max_row_count = 4;</code>
+       * <code>uint32 fetch_max_row_count = 4;</code>
        */
       public Builder setFetchMaxRowCount(int value) {
         
@@ -7585,7 +7695,7 @@ public final class Requests {
        * Maximum number of rows to be returned in the frame. Negative means no limit. Deprecated!
        * </pre>
        *
-       * <code>optional uint32 fetch_max_row_count = 4;</code>
+       * <code>uint32 fetch_max_row_count = 4;</code>
        */
       public Builder clearFetchMaxRowCount() {
         
@@ -7596,13 +7706,13 @@ public final class Requests {
 
       private int frameMaxSize_ ;
       /**
-       * <code>optional int32 frame_max_size = 5;</code>
+       * <code>int32 frame_max_size = 5;</code>
        */
       public int getFrameMaxSize() {
         return frameMaxSize_;
       }
       /**
-       * <code>optional int32 frame_max_size = 5;</code>
+       * <code>int32 frame_max_size = 5;</code>
        */
       public Builder setFrameMaxSize(int value) {
         
@@ -7611,7 +7721,7 @@ public final class Requests {
         return this;
       }
       /**
-       * <code>optional int32 frame_max_size = 5;</code>
+       * <code>int32 frame_max_size = 5;</code>
        */
       public Builder clearFrameMaxSize() {
         
@@ -7673,11 +7783,11 @@ public final class Requests {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>optional string connection_id = 1;</code>
+     * <code>string connection_id = 1;</code>
      */
     java.lang.String getConnectionId();
     /**
-     * <code>optional string connection_id = 1;</code>
+     * <code>string connection_id = 1;</code>
      */
     com.google.protobuf.ByteString
         getConnectionIdBytes();
@@ -7758,7 +7868,7 @@ public final class Requests {
     public static final int CONNECTION_ID_FIELD_NUMBER = 1;
     private volatile java.lang.Object connectionId_;
     /**
-     * <code>optional string connection_id = 1;</code>
+     * <code>string connection_id = 1;</code>
      */
     public java.lang.String getConnectionId() {
       java.lang.Object ref = connectionId_;
@@ -7773,7 +7883,7 @@ public final class Requests {
       }
     }
     /**
-     * <code>optional string connection_id = 1;</code>
+     * <code>string connection_id = 1;</code>
      */
     public com.google.protobuf.ByteString
         getConnectionIdBytes() {
@@ -7841,7 +7951,7 @@ public final class Requests {
         return memoizedHashCode;
       }
       int hash = 41;
-      hash = (19 * hash) + getDescriptorForType().hashCode();
+      hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + CONNECTION_ID_FIELD_NUMBER;
       hash = (53 * hash) + getConnectionId().hashCode();
       hash = (29 * hash) + unknownFields.hashCode();
@@ -7849,6 +7959,17 @@ public final class Requests {
       return hash;
     }
 
+    public static org.apache.calcite.avatica.proto.Requests.CreateStatementRequest parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static org.apache.calcite.avatica.proto.Requests.CreateStatementRequest parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
     public static org.apache.calcite.avatica.proto.Requests.CreateStatementRequest parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -8064,7 +8185,7 @@ public final class Requests {
 
       private java.lang.Object connectionId_ = "";
       /**
-       * <code>optional string connection_id = 1;</code>
+       * <code>string connection_id = 1;</code>
        */
       public java.lang.String getConnectionId() {
         java.lang.Object ref = connectionId_;
@@ -8079,7 +8200,7 @@ public final class Requests {
         }
       }
       /**
-       * <code>optional string connection_id = 1;</code>
+       * <code>string connection_id = 1;</code>
        */
       public com.google.protobuf.ByteString
           getConnectionIdBytes() {
@@ -8095,7 +8216,7 @@ public final class Requests {
         }
       }
       /**
-       * <code>optional string connection_id = 1;</code>
+       * <code>string connection_id = 1;</code>
        */
       public Builder setConnectionId(
           java.lang.String value) {
@@ -8108,7 +8229,7 @@ public final class Requests {
         return this;
       }
       /**
-       * <code>optional string connection_id = 1;</code>
+       * <code>string connection_id = 1;</code>
        */
       public Builder clearConnectionId() {
         
@@ -8117,7 +8238,7 @@ public final class Requests {
         return this;
       }
       /**
-       * <code>optional string connection_id = 1;</code>
+       * <code>string connection_id = 1;</code>
        */
       public Builder setConnectionIdBytes(
           com.google.protobuf.ByteString value) {
@@ -8184,17 +8305,17 @@ public final class Requests {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>optional string connection_id = 1;</code>
+     * <code>string connection_id = 1;</code>
      */
     java.lang.String getConnectionId();
     /**
-     * <code>optional string connection_id = 1;</code>
+     * <code>string connection_id = 1;</code>
      */
     com.google.protobuf.ByteString
         getConnectionIdBytes();
 
     /**
-     * <code>optional uint32 statement_id = 2;</code>
+     * <code>uint32 statement_id = 2;</code>
      */
     int getStatementId();
   }
@@ -8280,7 +8401,7 @@ public final class Requests {
     public static final int CONNECTION_ID_FIELD_NUMBER = 1;
     private volatile java.lang.Object connectionId_;
     /**
-     * <code>optional string connection_id = 1;</code>
+     * <code>string connection_id = 1;</code>
      */
     public java.lang.String getConnectionId() {
       java.lang.Object ref = connectionId_;
@@ -8295,7 +8416,7 @@ public final class Requests {
       }
     }
     /**
-     * <code>optional string connection_id = 1;</code>
+     * <code>string connection_id = 1;</code>
      */
     public com.google.protobuf.ByteString
         getConnectionIdBytes() {
@@ -8314,7 +8435,7 @@ public final class Requests {
     public static final int STATEMENT_ID_FIELD_NUMBER = 2;
     private int statementId_;
     /**
-     * <code>optional uint32 statement_id = 2;</code>
+     * <code>uint32 statement_id = 2;</code>
      */
     public int getStatementId() {
       return statementId_;
@@ -8381,7 +8502,7 @@ public final class Requests {
         return memoizedHashCode;
       }
       int hash = 41;
-      hash = (19 * hash) + getDescriptorForType().hashCode();
+      hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + CONNECTION_ID_FIELD_NUMBER;
       hash = (53 * hash) + getConnectionId().hashCode();
       hash = (37 * hash) + STATEMENT_ID_FIELD_NUMBER;
@@ -8391,6 +8512,17 @@ public final class Requests {
       return hash;
     }
 
+    public static org.apache.calcite.avatica.proto.Requests.CloseStatementRequest parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static org.apache.calcite.avatica.proto.Requests.CloseStatementRequest parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
     public static org.apache.calcite.avatica.proto.Requests.CloseStatementRequest parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -8612,7 +8744,7 @@ public final class Requests {
 
       private java.lang.Object connectionId_ = "";
       /**
-       * <code>optional string connection_id = 1;</code>
+       * <code>string connection_id = 1;</code>
        */
       public java.lang.String getConnectionId() {
         java.lang.Object ref = connectionId_;
@@ -8627,7 +8759,7 @@ public final class Requests {
         }
       }
       /**
-       * <code>optional string connection_id = 1;</code>
+       * <code>string connection_id = 1;</code>
        */
       public com.google.protobuf.ByteString
           getConnectionIdBytes() {
@@ -8643,7 +8775,7 @@ public final class Requests {
         }
       }
       /**
-       * <code>optional string connection_id = 1;</code>
+       * <code>string connection_id = 1;</code>
        */
       public Builder setConnectionId(
           java.lang.String value) {
@@ -8656,7 +8788,7 @@ public final class Requests {
         return this;
       }
       /**
-       * <code>optional string connection_id = 1;</code>
+       * <code>string connection_id = 1;</code>
        */
       public Builder clearConnectionId() {
         
@@ -8665,7 +8797,7 @@ public final class Requests {
         return this;
       }
       /**
-       * <code>optional string connection_id = 1;</code>
+       * <code>string connection_id = 1;</code>
        */
       public Builder setConnectionIdBytes(
           com.google.protobuf.ByteString value) {
@@ -8681,13 +8813,13 @@ public final class Requests {
 
       private int statementId_ ;
       /**
-       * <code>optional uint32 statement_id = 2;</code>
+       * <code>uint32 statement_id = 2;</code>
        */
       public int getStatementId() {
         return statementId_;
       }
       /**
-       * <code>optional uint32 statement_id = 2;</code>
+       * <code>uint32 statement_id = 2;</code>
        */
       public Builder setStatementId(int value) {
         
@@ -8696,7 +8828,7 @@ public final class Requests {
         return this;
       }
       /**
-       * <code>optional uint32 statement_id = 2;</code>
+       * <code>uint32 statement_id = 2;</code>
        */
       public Builder clearStatementId() {
         
@@ -8758,11 +8890,11 @@ public final class Requests {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>optional string connection_id = 1;</code>
+     * <code>string connection_id = 1;</code>
      */
     java.lang.String getConnectionId();
     /**
-     * <code>optional string connection_id = 1;</code>
+     * <code>string connection_id = 1;</code>
      */
     com.google.protobuf.ByteString
         getConnectionIdBytes();
@@ -8902,7 +9034,7 @@ public final class Requests {
     public static final int CONNECTION_ID_FIELD_NUMBER = 1;
     private volatile java.lang.Object connectionId_;
     /**
-     * <code>optional string connection_id = 1;</code>
+     * <code>string connection_id = 1;</code>
      */
     public java.lang.String getConnectionId() {
       java.lang.Object ref = connectionId_;
@@ -8917,7 +9049,7 @@ public final class Requests {
       }
     }
     /**
-     * <code>optional string connection_id = 1;</code>
+     * <code>string connection_id = 1;</code>
      */
     public com.google.protobuf.ByteString
         getConnectionIdBytes() {
@@ -9079,7 +9211,7 @@ public final class Requests {
         return memoizedHashCode;
       }
       int hash = 41;
-      hash = (19 * hash) + getDescriptorForType().hashCode();
+      hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + CONNECTION_ID_FIELD_NUMBER;
       hash = (53 * hash) + getConnectionId().hashCode();
       if (!internalGetInfo().getMap().isEmpty()) {
@@ -9091,6 +9223,17 @@ public final class Requests {
       return hash;
     }
 
+    public static org.apache.calcite.avatica.proto.Requests.OpenConnectionRequest parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static org.apache.calcite.avatica.proto.Requests.OpenConnectionRequest parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
     public static org.apache.calcite.avatica.proto.Requests.OpenConnectionRequest parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -9337,7 +9480,7 @@ public final class Requests {
 
       private java.lang.Object connectionId_ = "";
       /**
-       * <code>optional string connection_id = 1;</code>
+       * <code>string connection_id = 1;</code>
        */
       public java.lang.String getConnectionId() {
         java.lang.Object ref = connectionId_;
@@ -9352,7 +9495,7 @@ public final class Requests {
         }
       }
       /**
-       * <code>optional string connection_id = 1;</code>
+       * <code>string connection_id = 1;</code>
        */
       public com.google.protobuf.ByteString
           getConnectionIdBytes() {
@@ -9368,7 +9511,7 @@ public final class Requests {
         }
       }
       /**
-       * <code>optional string connection_id = 1;</code>
+       * <code>string connection_id = 1;</code>
        */
       public Builder setConnectionId(
           java.lang.String value) {
@@ -9381,7 +9524,7 @@ public final class Requests {
         return this;
       }
       /**
-       * <code>optional string connection_id = 1;</code>
+       * <code>string connection_id = 1;</code>
        */
       public Builder clearConnectionId() {
         
@@ -9390,7 +9533,7 @@ public final class Requests {
         return this;
       }
       /**
-       * <code>optional string connection_id = 1;</code>
+       * <code>string connection_id = 1;</code>
        */
       public Builder setConnectionIdBytes(
           com.google.protobuf.ByteString value) {
@@ -9481,7 +9624,8 @@ public final class Requests {
       }
 
       public Builder clearInfo() {
-        getMutableInfo().clear();
+        internalGetMutableInfo().getMutableMap()
+            .clear();
         return this;
       }
       /**
@@ -9491,7 +9635,8 @@ public final class Requests {
       public Builder removeInfo(
           java.lang.String key) {
         if (key == null) { throw new java.lang.NullPointerException(); }
-        getMutableInfo().remove(key);
+        internalGetMutableInfo().getMutableMap()
+            .remove(key);
         return this;
       }
       /**
@@ -9510,7 +9655,8 @@ public final class Requests {
           java.lang.String value) {
         if (key == null) { throw new java.lang.NullPointerException(); }
         if (value == null) { throw new java.lang.NullPointerException(); }
-        getMutableInfo().put(key, value);
+        internalGetMutableInfo().getMutableMap()
+            .put(key, value);
         return this;
       }
       /**
@@ -9519,7 +9665,8 @@ public final class Requests {
 
       public Builder putAllInfo(
           java.util.Map<java.lang.String, java.lang.String> values) {
-        getMutableInfo().putAll(values);
+        internalGetMutableInfo().getMutableMap()
+            .putAll(values);
         return this;
       }
       public final Builder setUnknownFields(
@@ -9576,11 +9723,11 @@ public final class Requests {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>optional string connection_id = 1;</code>
+     * <code>string connection_id = 1;</code>
      */
     java.lang.String getConnectionId();
     /**
-     * <code>optional string connection_id = 1;</code>
+     * <code>string connection_id = 1;</code>
      */
     com.google.protobuf.ByteString
         getConnectionIdBytes();
@@ -9661,7 +9808,7 @@ public final class Requests {
     public static final int CONNECTION_ID_FIELD_NUMBER = 1;
     private volatile java.lang.Object connectionId_;
     /**
-     * <code>optional string connection_id = 1;</code>
+     * <code>string connection_id = 1;</code>
      */
     public java.lang.String getConnectionId() {
       java.lang.Object ref = connectionId_;
@@ -9676,7 +9823,7 @@ public final class Requests {
       }
     }
     /**
-     * <code>optional string connection_id = 1;</code>
+     * <code>string connection_id = 1;</code>
      */
     public com.google.protobuf.ByteString
         getConnectionIdBytes() {
@@ -9744,7 +9891,7 @@ public final class Requests {
         return memoizedHashCode;
       }
       int hash = 41;
-      hash = (19 * hash) + getDescriptorForType().hashCode();
+      hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + CONNECTION_ID_FIELD_NUMBER;
       hash = (53 * hash) + getConnectionId().hashCode();
       hash = (29 * hash) + unknownFields.hashCode();
@@ -9752,6 +9899,17 @@ public final class Requests {
       return hash;
     }
 
+    public static org.apache.calcite.avatica.proto.Requests.CloseConnectionRequest parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static org.apache.calcite.avatica.proto.Requests.CloseConnectionRequest parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
     public static org.apache.calcite.avatica.proto.Requests.CloseConnectionRequest parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -9967,7 +10125,7 @@ public final class Requests {
 
       private java.lang.Object connectionId_ = "";
       /**
-       * <code>optional string connection_id = 1;</code>
+       * <code>string connection_id = 1;</code>
        */
       public java.lang.String getConnectionId() {
         java.lang.Object ref = connectionId_;
@@ -9982,7 +10140,7 @@ public final class Requests {
         }
       }
       /**
-       * <code>optional string connection_id = 1;</code>
+       * <code>string connection_id = 1;</code>
        */
       public com.google.protobuf.ByteString
           getConnectionIdBytes() {
@@ -9998,7 +10156,7 @@ public final class Requests {
         }
       }
       /**
-       * <code>optional string connection_id = 1;</code>
+       * <code>string connection_id = 1;</code>
        */
       public Builder setConnectionId(
           java.lang.String value) {
@@ -10011,7 +10169,7 @@ public final class Requests {
         return this;
       }
       /**
-       * <code>optional string connection_id = 1;</code>
+       * <code>string connection_id = 1;</code>
        */
       public Builder clearConnectionId() {
         
@@ -10020,7 +10178,7 @@ public final class Requests {
         return this;
       }
       /**
-       * <code>optional string connection_id = 1;</code>
+       * <code>string connection_id = 1;</code>
        */
       public Builder setConnectionIdBytes(
           com.google.protobuf.ByteString value) {
@@ -10087,25 +10245,25 @@ public final class Requests {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>optional string connection_id = 1;</code>
+     * <code>string connection_id = 1;</code>
      */
     java.lang.String getConnectionId();
     /**
-     * <code>optional string connection_id = 1;</code>
+     * <code>string connection_id = 1;</code>
      */
     com.google.protobuf.ByteString
         getConnectionIdBytes();
 
     /**
-     * <code>optional .ConnectionProperties conn_props = 2;</code>
+     * <code>.ConnectionProperties conn_props = 2;</code>
      */
     boolean hasConnProps();
     /**
-     * <code>optional .ConnectionProperties conn_props = 2;</code>
+     * <code>.ConnectionProperties conn_props = 2;</code>
      */
     org.apache.calcite.avatica.proto.Common.ConnectionProperties getConnProps();
     /**
-     * <code>optional .ConnectionProperties conn_props = 2;</code>
+     * <code>.ConnectionProperties conn_props = 2;</code>
      */
     org.apache.calcite.avatica.proto.Common.ConnectionPropertiesOrBuilder getConnPropsOrBuilder();
   }
@@ -10194,7 +10352,7 @@ public final class Requests {
     public static final int CONNECTION_ID_FIELD_NUMBER = 1;
     private volatile java.lang.Object connectionId_;
     /**
-     * <code>optional string connection_id = 1;</code>
+     * <code>string connection_id = 1;</code>
      */
     public java.lang.String getConnectionId() {
       java.lang.Object ref = connectionId_;
@@ -10209,7 +10367,7 @@ public final class Requests {
       }
     }
     /**
-     * <code>optional string connection_id = 1;</code>
+     * <code>string connection_id = 1;</code>
      */
     public com.google.protobuf.ByteString
         getConnectionIdBytes() {
@@ -10228,19 +10386,19 @@ public final class Requests {
     public static final int CONN_PROPS_FIELD_NUMBER = 2;
     private org.apache.calcite.avatica.proto.Common.ConnectionProperties connProps_;
     /**
-     * <code>optional .ConnectionProperties conn_props = 2;</code>
+     * <code>.ConnectionProperties conn_props = 2;</code>
      */
     public boolean hasConnProps() {
       return connProps_ != null;
     }
     /**
-     * <code>optional .ConnectionProperties conn_props = 2;</code>
+     * <code>.ConnectionProperties conn_props = 2;</code>
      */
     public org.apache.calcite.avatica.proto.Common.ConnectionProperties getConnProps() {
       return connProps_ == null ? org.apache.calcite.avatica.proto.Common.ConnectionProperties.getDefaultInstance() : connProps_;
     }
     /**
-     * <code>optional .ConnectionProperties conn_props = 2;</code>
+     * <code>.ConnectionProperties conn_props = 2;</code>
      */
     public org.apache.calcite.avatica.proto.Common.ConnectionPropertiesOrBuilder getConnPropsOrBuilder() {
       return getConnProps();
@@ -10310,7 +10468,7 @@ public final class Requests {
         return memoizedHashCode;
       }
       int hash = 41;
-      hash = (19 * hash) + getDescriptorForType().hashCode();
+      hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + CONNECTION_ID_FIELD_NUMBER;
       hash = (53 * hash) + getConnectionId().hashCode();
       if (hasConnProps()) {
@@ -10322,6 +10480,17 @@ public final class Requests {
       return hash;
     }
 
+    public static org.apache.calcite.avatica.proto.Requests.ConnectionSyncRequest parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static org.apache.calcite.avatica.proto.Requests.ConnectionSyncRequest parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
     public static org.apache.calcite.avatica.proto.Requests.ConnectionSyncRequest parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -10547,7 +10716,7 @@ public final class Requests {
 
       private java.lang.Object connectionId_ = "";
       /**
-       * <code>optional string connection_id = 1;</code>
+       * <code>string connection_id = 1;</code>
        */
       public java.lang.String getConnectionId() {
         java.lang.Object ref = connectionId_;
@@ -10562,7 +10731,7 @@ public final class Requests {
         }
       }
       /**
-       * <code>optional string connection_id = 1;</code>
+       * <code>string connection_id = 1;</code>
        */
       public com.google.protobuf.ByteString
           getConnectionIdBytes() {
@@ -10578,7 +10747,7 @@ public final class Requests {
         }
       }
       /**
-       * <code>optional string connection_id = 1;</code>
+       * <code>string connection_id = 1;</code>
        */
       public Builder setConnectionId(
           java.lang.String value) {
@@ -10591,7 +10760,7 @@ public final class Requests {
         return this;
       }
       /**
-       * <code>optional string connection_id = 1;</code>
+       * <code>string connection_id = 1;</code>
        */
       public Builder clearConnectionId() {
         
@@ -10600,7 +10769,7 @@ public final class Requests {
         return this;
       }
       /**
-       * <code>optional string connection_id = 1;</code>
+       * <code>string connection_id = 1;</code>
        */
       public Builder setConnectionIdBytes(
           com.google.protobuf.ByteString value) {
@@ -10618,13 +10787,13 @@ public final class Requests {
       private com.google.protobuf.SingleFieldBuilderV3<
           org.apache.calcite.avatica.proto.Common.ConnectionProperties, org.apache.calcite.avatica.proto.Common.ConnectionProperties.Builder, org.apache.calcite.avatica.proto.Common.ConnectionPropertiesOrBuilder> connPropsBuilder_;
       /**
-       * <code>optional .ConnectionProperties conn_props = 2;</code>
+       * <code>.ConnectionProperties conn_props = 2;</code>
        */
       public boolean hasConnProps() {
         return connPropsBuilder_ != null || connProps_ != null;
       }
       /**
-       * <code>optional .ConnectionProperties conn_props = 2;</code>
+       * <code>.ConnectionProperties conn_props = 2;</code>
        */
       public org.apache.calcite.avatica.proto.Common.ConnectionProperties getConnProps() {
         if (connPropsBuilder_ == null) {
@@ -10634,7 +10803,7 @@ public final class Requests {
         }
       }
       /**
-       * <code>optional .ConnectionProperties conn_props = 2;</code>
+       * <code>.ConnectionProperties conn_props = 2;</code>
        */
       public Builder setConnProps(org.apache.calcite.avatica.proto.Common.ConnectionProperties value) {
         if (connPropsBuilder_ == null) {
@@ -10650,7 +10819,7 @@ public final class Requests {
         return this;
       }
       /**
-       * <code>optional .ConnectionProperties conn_props = 2;</code>
+       * <code>.ConnectionProperties conn_props = 2;</code>
        */
       public Builder setConnProps(
           org.apache.calcite.avatica.proto.Common.ConnectionProperties.Builder builderForValue) {
@@ -10664,7 +10833,7 @@ public final class Requests {
         return this;
       }
       /**
-       * <code>optional .ConnectionProperties conn_props = 2;</code>
+       * <code>.ConnectionProperties conn_props = 2;</code>
        */
       public Builder mergeConnProps(org.apache.calcite.avatica.proto.Common.ConnectionProperties value) {
         if (connPropsBuilder_ == null) {
@@ -10682,7 +10851,7 @@ public final class Requests {
         return this;
       }
       /**
-       * <code>optional .ConnectionProperties conn_props = 2;</code>
+       * <code>.ConnectionProperties conn_props = 2;</code>
        */
       public Builder clearConnProps() {
         if (connPropsBuilder_ == null) {
@@ -10696,7 +10865,7 @@ public final class Requests {
         return this;
       }
       /**
-       * <code>optional .ConnectionProperties conn_props = 2;</code>
+       * <code>.ConnectionProperties conn_props = 2;</code>
        */
       public org.apache.calcite.avatica.proto.Common.ConnectionProperties.Builder getConnPropsBuilder() {
         
@@ -10704,7 +10873,7 @@ public final class Requests {
         return getConnPropsFieldBuilder().getBuilder();
       }
       /**
-       * <code>optional .ConnectionProperties conn_props = 2;</code>
+       * <code>.ConnectionProperties conn_props = 2;</code>
        */
       public org.apache.calcite.avatica.proto.Common.ConnectionPropertiesOrBuilder getConnPropsOrBuilder() {
         if (connPropsBuilder_ != null) {
@@ -10715,7 +10884,7 @@ public final class Requests {
         }
       }
       /**
-       * <code>optional .ConnectionProperties conn_props = 2;</code>
+       * <code>.ConnectionProperties conn_props = 2;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           org.apache.calcite.avatica.proto.Common.ConnectionProperties, org.apache.calcite.avatica.proto.Common.ConnectionProperties.Builder, org.apache.calcite.avatica.proto.Common.ConnectionPropertiesOrBuilder> 
@@ -10784,15 +10953,15 @@ public final class Requests {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>optional .StatementHandle statementHandle = 1;</code>
+     * <code>.StatementHandle statementHandle = 1;</code>
      */
     boolean hasStatementHandle();
     /**
-     * <code>optional .StatementHandle statementHandle = 1;</code>
+     * <code>.StatementHandle statementHandle = 1;</code>
      */
     org.apache.calcite.avatica.proto.Common.StatementHandle getStatementHandle();
     /**
-     * <code>optional .StatementHandle statementHandle = 1;</code>
+     * <code>.StatementHandle statementHandle = 1;</code>
      */
     org.apache.calcite.avatica.proto.Common.StatementHandleOrBuilder getStatementHandleOrBuilder();
 
@@ -10825,12 +10994,12 @@ public final class Requests {
      * The maximum number of rows to return in the first Frame
      * </pre>
      *
-     * <code>optional uint64 first_frame_max_size = 3;</code>
+     * <code>uint64 first_frame_max_size = 3;</code>
      */
     long getFirstFrameMaxSize();
 
     /**
-     * <code>optional bool has_parameter_values = 4;</code>
+     * <code>bool has_parameter_values = 4;</code>
      */
     boolean getHasParameterValues();
   }
@@ -10942,19 +11111,19 @@ public final class Requests {
     public static final int STATEMENTHANDLE_FIELD_NUMBER = 1;
     private org.apache.calcite.avatica.proto.Common.StatementHandle statementHandle_;
     /**
-     * <code>optional .StatementHandle statementHandle = 1;</code>
+     * <code>.StatementHandle statementHandle = 1;</code>
      */
     public boolean hasStatementHandle() {
       return statementHandle_ != null;
     }
     /**
-     * <code>optional .StatementHandle statementHandle = 1;</code>
+     * <code>.StatementHandle statementHandle = 1;</code>
      */
     public org.apache.calcite.avatica.proto.Common.StatementHandle getStatementHandle() {
       return statementHandle_ == null ? org.apache.calcite.avatica.proto.Common.StatementHandle.getDefaultInstance() : statementHandle_;
     }
     /**
-     * <code>optional .StatementHandle statementHandle = 1;</code>
+     * <code>.StatementHandle statementHandle = 1;</code>
      */
     public org.apache.calcite.avatica.proto.Common.StatementHandleOrBuilder getStatementHandleOrBuilder() {
       return getStatementHandle();
@@ -11002,7 +11171,7 @@ public final class Requests {
      * The maximum number of rows to return in the first Frame
      * </pre>
      *
-     * <code>optional uint64 first_frame_max_size = 3;</code>
+     * <code>uint64 first_frame_max_size = 3;</code>
      */
     public long getFirstFrameMaxSize() {
       return firstFrameMaxSize_;
@@ -11011,7 +11180,7 @@ public final class Requests {
     public static final int HAS_PARAMETER_VALUES_FIELD_NUMBER = 4;
     private boolean hasParameterValues_;
     /**
-     * <code>optional bool has_parameter_values = 4;</code>
+     * <code>bool has_parameter_values = 4;</code>
      */
     public boolean getHasParameterValues() {
       return hasParameterValues_;
@@ -11100,7 +11269,7 @@ public final class Requests {
         return memoizedHashCode;
       }
       int hash = 41;
-      hash = (19 * hash) + getDescriptorForType().hashCode();
+      hash = (19 * hash) + getDescriptor().hashCode();
       if (hasStatementHandle()) {
         hash = (37 * hash) + STATEMENTHANDLE_FIELD_NUMBER;
         hash = (53 * hash) + getStatementHandle().hashCode();
@@ -11120,6 +11289,17 @@ public final class Requests {
       return hash;
     }
 
+    public static org.apache.calcite.avatica.proto.Requests.ExecuteRequest parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static org.apache.calcite.avatica.proto.Requests.ExecuteRequest parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
     public static org.apache.calcite.avatica.proto.Requests.ExecuteRequest parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -11402,13 +11582,13 @@ public final class Requests {
       private com.google.protobuf.SingleFieldBuilderV3<
           org.apache.calcite.avatica.proto.Common.StatementHandle, org.apache.calcite.avatica.proto.Common.StatementHandle.Builder, org.apache.calcite.avatica.proto.Common.StatementHandleOrBuilder> statementHandleBuilder_;
       /**
-       * <code>optional .StatementHandle statementHandle = 1;</code>
+       * <code>.StatementHandle statementHandle = 1;</code>
        */
       public boolean hasStatementHandle() {
         return statementHandleBuilder_ != null || statementHandle_ != null;
       }
       /**
-       * <code>optional .StatementHandle statementHandle = 1;</code>
+       * <code>.StatementHandle statementHandle = 1;</code>
        */
       public org.apache.calcite.avatica.proto.Common.StatementHandle getStatementHandle() {
         if (statementHandleBuilder_ == null) {
@@ -11418,7 +11598,7 @@ public final class Requests {
         }
       }
       /**
-       * <code>optional .StatementHandle statementHandle = 1;</code>
+       * <code>.StatementHandle statementHandle = 1;</code>
        */
       public Builder setStatementHandle(org.apache.calcite.avatica.proto.Common.StatementHandle value) {
         if (statementHandleBuilder_ == null) {
@@ -11434,7 +11614,7 @@ public final class Requests {
         return this;
       }
       /**
-       * <code>optional .StatementHandle statementHandle = 1;</code>
+       * <code>.StatementHandle statementHandle = 1;</code>
        */
       public Builder setStatementHandle(
           org.apache.calcite.avatica.proto.Common.StatementHandle.Builder builderForValue) {
@@ -11448,7 +11628,7 @@ public final class Requests {
         return this;
       }
       /**
-       * <code>optional .StatementHandle statementHandle = 1;</code>
+       * <code>.StatementHandle statementHandle = 1;</code>
        */
       public Builder mergeStatementHandle(org.apache.calcite.avatica.proto.Common.StatementHandle value) {
         if (statementHandleBuilder_ == null) {
@@ -11466,7 +11646,7 @@ public final class Requests {
         return this;
       }
       /**
-       * <code>optional .StatementHandle statementHandle = 1;</code>
+       * <code>.StatementHandle statementHandle = 1;</code>
        */
       public Builder clearStatementHandle() {
         if (statementHandleBuilder_ == null) {
@@ -11480,7 +11660,7 @@ public final class Requests {
         return this;
       }
       /**
-       * <code>optional .StatementHandle statementHandle = 1;</code>
+       * <code>.StatementHandle statementHandle = 1;</code>
        */
       public org.apache.calcite.avatica.proto.Common.StatementHandle.Builder getStatementHandleBuilder() {
         
@@ -11488,7 +11668,7 @@ public final class Requests {
         return getStatementHandleFieldBuilder().getBuilder();
       }
       /**
-       * <code>optional .StatementHandle statementHandle = 1;</code>
+       * <code>.StatementHandle statementHandle = 1;</code>
        */
       public org.apache.calcite.avatica.proto.Common.StatementHandleOrBuilder getStatementHandleOrBuilder() {
         if (statementHandleBuilder_ != null) {
@@ -11499,7 +11679,7 @@ public final class Requests {
         }
       }
       /**
-       * <code>optional .StatementHandle statementHandle = 1;</code>
+       * <code>.StatementHandle statementHandle = 1;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           org.apache.calcite.avatica.proto.Common.StatementHandle, org.apache.calcite.avatica.proto.Common.StatementHandle.Builder, org.apache.calcite.avatica.proto.Common.StatementHandleOrBuilder> 
@@ -11761,7 +11941,7 @@ public final class Requests {
        * The maximum number of rows to return in the first Frame
        * </pre>
        *
-       * <code>optional uint64 first_frame_max_size = 3;</code>
+       * <code>uint64 first_frame_max_size = 3;</code>
        */
       public long getFirstFrameMaxSize() {
         return firstFrameMaxSize_;
@@ -11771,7 +11951,7 @@ public final class Requests {
        * The maximum number of rows to return in the first Frame
        * </pre>
        *
-       * <code>optional uint64 first_frame_max_size = 3;</code>
+       * <code>uint64 first_frame_max_size = 3;</code>
        */
       public Builder setFirstFrameMaxSize(long value) {
         
@@ -11784,7 +11964,7 @@ public final class Requests {
        * The maximum number of rows to return in the first Frame
        * </pre>
        *
-       * <code>optional uint64 first_frame_max_size = 3;</code>
+       * <code>uint64 first_frame_max_size = 3;</code>
        */
       public Builder clearFirstFrameMaxSize() {
         
@@ -11795,13 +11975,13 @@ public final class Requests {
 
       private boolean hasParameterValues_ ;
       /**
-       * <code>optional bool has_parameter_values = 4;</code>
+       * <code>bool has_parameter_values = 4;</code>
        */
       public boolean getHasParameterValues() {
         return hasParameterValues_;
       }
       /**
-       * <code>optional bool has_parameter_values = 4;</code>
+       * <code>bool has_parameter_values = 4;</code>
        */
       public Builder setHasParameterValues(boolean value) {
         
@@ -11810,7 +11990,7 @@ public final class Requests {
         return this;
       }
       /**
-       * <code>optional bool has_parameter_values = 4;</code>
+       * <code>bool has_parameter_values = 4;</code>
        */
       public Builder clearHasParameterValues() {
         
@@ -11872,35 +12052,35 @@ public final class Requests {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>optional string connection_id = 1;</code>
+     * <code>string connection_id = 1;</code>
      */
     java.lang.String getConnectionId();
     /**
-     * <code>optional string connection_id = 1;</code>
+     * <code>string connection_id = 1;</code>
      */
     com.google.protobuf.ByteString
         getConnectionIdBytes();
 
     /**
-     * <code>optional uint32 statement_id = 2;</code>
+     * <code>uint32 statement_id = 2;</code>
      */
     int getStatementId();
 
     /**
-     * <code>optional .QueryState state = 3;</code>
+     * <code>.QueryState state = 3;</code>
      */
     boolean hasState();
     /**
-     * <code>optional .QueryState state = 3;</code>
+     * <code>.QueryState state = 3;</code>
      */
     org.apache.calcite.avatica.proto.Common.QueryState getState();
     /**
-     * <code>optional .QueryState state = 3;</code>
+     * <code>.QueryState state = 3;</code>
      */
     org.apache.calcite.avatica.proto.Common.QueryStateOrBuilder getStateOrBuilder();
 
     /**
-     * <code>optional uint64 offset = 4;</code>
+     * <code>uint64 offset = 4;</code>
      */
     long getOffset();
   }
@@ -12001,7 +12181,7 @@ public final class Requests {
     public static final int CONNECTION_ID_FIELD_NUMBER = 1;
     private volatile java.lang.Object connectionId_;
     /**
-     * <code>optional string connection_id = 1;</code>
+     * <code>string connection_id = 1;</code>
      */
     public java.lang.String getConnectionId() {
       java.lang.Object ref = connectionId_;
@@ -12016,7 +12196,7 @@ public final class Requests {
       }
     }
     /**
-     * <code>optional string connection_id = 1;</code>
+     * <code>string connection_id = 1;</code>
      */
     public com.google.protobuf.ByteString
         getConnectionIdBytes() {
@@ -12035,7 +12215,7 @@ public final class Requests {
     public static final int STATEMENT_ID_FIELD_NUMBER = 2;
     private int statementId_;
     /**
-     * <code>optional uint32 statement_id = 2;</code>
+     * <code>uint32 statement_id = 2;</code>
      */
     public int getStatementId() {
       return statementId_;
@@ -12044,19 +12224,19 @@ public final class Requests {
     public static final int STATE_FIELD_NUMBER = 3;
     private org.apache.calcite.avatica.proto.Common.QueryState state_;
     /**
-     * <code>optional .QueryState state = 3;</code>
+     * <code>.QueryState state = 3;</code>
      */
     public boolean hasState() {
       return state_ != null;
     }
     /**
-     * <code>optional .QueryState state = 3;</code>
+     * <code>.QueryState state = 3;</code>
      */
     public org.apache.calcite.avatica.proto.Common.QueryState getState() {
       return state_ == null ? org.apache.calcite.avatica.proto.Common.QueryState.getDefaultInstance() : state_;
     }
     /**
-     * <code>optional .QueryState state = 3;</code>
+     * <code>.QueryState state = 3;</code>
      */
     public org.apache.calcite.avatica.proto.Common.QueryStateOrBuilder getStateOrBuilder() {
       return getState();
@@ -12065,7 +12245,7 @@ public final class Requests {
     public static final int OFFSET_FIELD_NUMBER = 4;
     private long offset_;
     /**
-     * <code>optional uint64 offset = 4;</code>
+     * <code>uint64 offset = 4;</code>
      */
     public long getOffset() {
       return offset_;
@@ -12153,7 +12333,7 @@ public final class Requests {
         return memoizedHashCode;
       }
       int hash = 41;
-      hash = (19 * hash) + getDescriptorForType().hashCode();
+      hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + CONNECTION_ID_FIELD_NUMBER;
       hash = (53 * hash) + getConnectionId().hashCode();
       hash = (37 * hash) + STATEMENT_ID_FIELD_NUMBER;
@@ -12170,6 +12350,17 @@ public final class Requests {
       return hash;
     }
 
+    public static org.apache.calcite.avatica.proto.Requests.SyncResultsRequest parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static org.apache.calcite.avatica.proto.Requests.SyncResultsRequest parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
     public static org.apache.calcite.avatica.proto.Requests.SyncResultsRequest parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -12407,7 +12598,7 @@ public final class Requests {
 
       private java.lang.Object connectionId_ = "";
       /**
-       * <code>optional string connection_id = 1;</code>
+       * <code>string connection_id = 1;</code>
        */
       public java.lang.String getConnectionId() {
         java.lang.Object ref = connectionId_;
@@ -12422,7 +12613,7 @@ public final class Requests {
         }
       }
       /**
-       * <code>optional string connection_id = 1;</code>
+       * <code>string connection_id = 1;</code>
        */
       public com.google.protobuf.ByteString
           getConnectionIdBytes() {
@@ -12438,7 +12629,7 @@ public final class Requests {
         }
       }
       /**
-       * <code>optional string connection_id = 1;</code>
+       * <code>string connection_id = 1;</code>
        */
       public Builder setConnectionId(
           java.lang.String value) {
@@ -12451,7 +12642,7 @@ public final class Requests {
         return this;
       }
       /**
-       * <code>optional string connection_id = 1;</code>
+       * <code>string connection_id = 1;</code>
        */
       public Builder clearConnectionId() {
         
@@ -12460,7 +12651,7 @@ public final class Requests {
         return this;
       }
       /**
-       * <code>optional string connection_id = 1;</code>
+       * <code>string connection_id = 1;</code>
        */
       public Builder setConnectionIdBytes(
           com.google.protobuf.ByteString value) {
@@ -12476,13 +12667,13 @@ public final class Requests {
 
       private int statementId_ ;
       /**
-       * <code>optional uint32 statement_id = 2;</code>
+       * <code>uint32 statement_id = 2;</code>
        */
       public int getStatementId() {
         return statementId_;
       }
       /**
-       * <code>optional uint32 statement_id = 2;</code>
+       * <code>uint32 statement_id = 2;</code>
        */
       public Builder setStatementId(int value) {
         
@@ -12491,7 +12682,7 @@ public final class Requests {
         return this;
       }
       /**
-       * <code>optional uint32 statement_id = 2;</code>
+       * <code>uint32 statement_id = 2;</code>
        */
       public Builder clearStatementId() {
         
@@ -12504,13 +12695,13 @@ public final class Requests {
       private com.google.protobuf.SingleFieldBuilderV3<
           org.apache.calcite.avatica.proto.Common.QueryState, org.apache.calcite.avatica.proto.Common.QueryState.Builder, org.apache.calcite.avatica.proto.Common.QueryStateOrBuilder> stateBuilder_;
       /**
-       * <code>optional .QueryState state = 3;</code>
+       * <code>.QueryState state = 3;</code>
        */
       public boolean hasState() {
         return stateBuilder_ != null || state_ != null;
       }
       /**
-       * <code>optional .QueryState state = 3;</code>
+       * <code>.QueryState state = 3;</code>
        */
       public org.apache.calcite.avatica.proto.Common.QueryState getState() {
         if (stateBuilder_ == null) {
@@ -12520,7 +12711,7 @@ public final class Requests {
         }
       }
       /**
-       * <code>optional .QueryState state = 3;</code>
+       * <code>.QueryState state = 3;</code>
        */
       public Builder setState(org.apache.calcite.avatica.proto.Common.QueryState value) {
         if (stateBuilder_ == null) {
@@ -12536,7 +12727,7 @@ public final class Requests {
         return this;
       }
       /**
-       * <code>optional .QueryState state = 3;</code>
+       * <code>.QueryState state = 3;</code>
        */
       public Builder setState(
           org.apache.calcite.avatica.proto.Common.QueryState.Builder builderForValue) {
@@ -12550,7 +12741,7 @@ public final class Requests {
         return this;
       }
       /**
-       * <code>optional .QueryState state = 3;</code>
+       * <code>.QueryState state = 3;</code>
        */
       public Builder mergeState(org.apache.calcite.avatica.proto.Common.QueryState value) {
         if (stateBuilder_ == null) {
@@ -12568,7 +12759,7 @@ public final class Requests {
         return this;
       }
       /**
-       * <code>optional .QueryState state = 3;</code>
+       * <code>.QueryState state = 3;</code>
        */
       public Builder clearState() {
         if (stateBuilder_ == null) {
@@ -12582,7 +12773,7 @@ public final class Requests {
         return this;
       }
       /**
-       * <code>optional .QueryState state = 3;</code>
+       * <code>.QueryState state = 3;</code>
        */
       public org.apache.calcite.avatica.proto.Common.QueryState.Builder getStateBuilder() {
         
@@ -12590,7 +12781,7 @@ public final class Requests {
         return getStateFieldBuilder().getBuilder();
       }
       /**
-       * <code>optional .QueryState state = 3;</code>
+       * <code>.QueryState state = 3;</code>
        */
       public org.apache.calcite.avatica.proto.Common.QueryStateOrBuilder getStateOrBuilder() {
         if (stateBuilder_ != null) {
@@ -12601,7 +12792,7 @@ public final class Requests {
         }
       }
       /**
-       * <code>optional .QueryState state = 3;</code>
+       * <code>.QueryState state = 3;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           org.apache.calcite.avatica.proto.Common.QueryState, org.apache.calcite.avatica.proto.Common.QueryState.Builder, org.apache.calcite.avatica.proto.Common.QueryStateOrBuilder> 
@@ -12619,13 +12810,13 @@ public final class Requests {
 
       private long offset_ ;
       /**
-       * <code>optional uint64 offset = 4;</code>
+       * <code>uint64 offset = 4;</code>
        */
       public long getOffset() {
         return offset_;
       }
       /**
-       * <code>optional uint64 offset = 4;</code>
+       * <code>uint64 offset = 4;</code>
        */
       public Builder setOffset(long value) {
         
@@ -12634,7 +12825,7 @@ public final class Requests {
         return this;
       }
       /**
-       * <code>optional uint64 offset = 4;</code>
+       * <code>uint64 offset = 4;</code>
        */
       public Builder clearOffset() {
         
@@ -12696,11 +12887,11 @@ public final class Requests {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>optional string connection_id = 1;</code>
+     * <code>string connection_id = 1;</code>
      */
     java.lang.String getConnectionId();
     /**
-     * <code>optional string connection_id = 1;</code>
+     * <code>string connection_id = 1;</code>
      */
     com.google.protobuf.ByteString
         getConnectionIdBytes();
@@ -12781,7 +12972,7 @@ public final class Requests {
     public static final int CONNECTION_ID_FIELD_NUMBER = 1;
     private volatile java.lang.Object connectionId_;
     /**
-     * <code>optional string connection_id = 1;</code>
+     * <code>string connection_id = 1;</code>
      */
     public java.lang.String getConnectionId() {
       java.lang.Object ref = connectionId_;
@@ -12796,7 +12987,7 @@ public final class Requests {
       }
     }
     /**
-     * <code>optional string connection_id = 1;</code>
+     * <code>string connection_id = 1;</code>
      */
     public com.google.protobuf.ByteString
         getConnectionIdBytes() {
@@ -12864,7 +13055,7 @@ public final class Requests {
         return memoizedHashCode;
       }
       int hash = 41;
-      hash = (19 * hash) + getDescriptorForType().hashCode();
+      hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + CONNECTION_ID_FIELD_NUMBER;
       hash = (53 * hash) + getConnectionId().hashCode();
       hash = (29 * hash) + unknownFields.hashCode();
@@ -12872,6 +13063,17 @@ public final class Requests {
       return hash;
     }
 
+    public static org.apache.calcite.avatica.proto.Requests.CommitRequest parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static org.apache.calcite.avatica.proto.Requests.CommitRequest parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
     public static org.apache.calcite.avatica.proto.Requests.CommitRequest parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -13087,7 +13289,7 @@ public final class Requests {
 
       private java.lang.Object connectionId_ = "";
       /**
-       * <code>optional string connection_id = 1;</code>
+       * <code>string connection_id = 1;</code>
        */
       public java.lang.String getConnectionId() {
         java.lang.Object ref = connectionId_;
@@ -13102,7 +13304,7 @@ public final class Requests {
         }
       }
       /**
-       * <code>optional string connection_id = 1;</code>
+       * <code>string connection_id = 1;</code>
        */
       public com.google.protobuf.ByteString
           getConnectionIdBytes() {
@@ -13118,7 +13320,7 @@ public final class Requests {
         }
       }
       /**
-       * <code>optional string connection_id = 1;</code>
+       * <code>string connection_id = 1;</code>
        */
       public Builder setConnectionId(
           java.lang.String value) {
@@ -13131,7 +13333,7 @@ public final class Requests {
         return this;
       }
       /**
-       * <code>optional string connection_id = 1;</code>
+       * <code>string connection_id = 1;</code>
        */
       public Builder clearConnectionId() {
         
@@ -13140,7 +13342,7 @@ public final class Requests {
         return this;
       }
       /**
-       * <code>optional string connection_id = 1;</code>
+       * <code>string connection_id = 1;</code>
        */
       public Builder setConnectionIdBytes(
           com.google.protobuf.ByteString value) {
@@ -13207,11 +13409,11 @@ public final class Requests {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>optional string connection_id = 1;</code>
+     * <code>string connection_id = 1;</code>
      */
     java.lang.String getConnectionId();
     /**
-     * <code>optional string connection_id = 1;</code>
+     * <code>string connection_id = 1;</code>
      */
     com.google.protobuf.ByteString
         getConnectionIdBytes();
@@ -13292,7 +13494,7 @@ public final class Requests {
     public static final int CONNECTION_ID_FIELD_NUMBER = 1;
     private volatile java.lang.Object connectionId_;
     /**
-     * <code>optional string connection_id = 1;</code>
+     * <code>string connection_id = 1;</code>
      */
     public java.lang.String getConnectionId() {
       java.lang.Object ref = connectionId_;
@@ -13307,7 +13509,7 @@ public final class Requests {
       }
     }
     /**
-     * <code>optional string connection_id = 1;</code>
+     * <code>string connection_id = 1;</code>
      */
     public com.google.protobuf.ByteString
         getConnectionIdBytes() {
@@ -13375,7 +13577,7 @@ public final class Requests {
         return memoizedHashCode;
       }
       int hash = 41;
-      hash = (19 * hash) + getDescriptorForType().hashCode();
+      hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + CONNECTION_ID_FIELD_NUMBER;
       hash = (53 * hash) + getConnectionId().hashCode();
       hash = (29 * hash) + unknownFields.hashCode();
@@ -13383,6 +13585,17 @@ public final class Requests {
       return hash;
     }
 
+    public static org.apache.calcite.avatica.proto.Requests.RollbackRequest parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static org.apache.calcite.avatica.proto.Requests.RollbackRequest parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
     public static org.apache.calcite.avatica.proto.Requests.RollbackRequest parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -13598,7 +13811,7 @@ public final class Requests {
 
       private java.lang.Object connectionId_ = "";
       /**
-       * <code>optional string connection_id = 1;</code>
+       * <code>string connection_id = 1;</code>
        */
       public java.lang.String getConnectionId() {
         java.lang.Object ref = connectionId_;
@@ -13613,7 +13826,7 @@ public final class Requests {
         }
       }
       /**
-       * <code>optional string connection_id = 1;</code>
+       * <code>string connection_id = 1;</code>
        */
       public com.google.protobuf.ByteString
           getConnectionIdBytes() {
@@ -13629,7 +13842,7 @@ public final class Requests {
         }
       }
       /**
-       * <code>optional string connection_id = 1;</code>
+       * <code>string connection_id = 1;</code>
        */
       public Builder setConnectionId(
           java.lang.String value) {
@@ -13642,7 +13855,7 @@ public final class Requests {
         return this;
       }
       /**
-       * <code>optional string connection_id = 1;</code>
+       * <code>string connection_id = 1;</code>
        */
       public Builder clearConnectionId() {
         
@@ -13651,7 +13864,7 @@ public final class Requests {
         return this;
       }
       /**
-       * <code>optional string connection_id = 1;</code>
+       * <code>string connection_id = 1;</code>
        */
       public Builder setConnectionIdBytes(
           com.google.protobuf.ByteString value) {
@@ -13718,17 +13931,17 @@ public final class Requests {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>optional string connection_id = 1;</code>
+     * <code>string connection_id = 1;</code>
      */
     java.lang.String getConnectionId();
     /**
-     * <code>optional string connection_id = 1;</code>
+     * <code>string connection_id = 1;</code>
      */
     com.google.protobuf.ByteString
         getConnectionIdBytes();
 
     /**
-     * <code>optional uint32 statement_id = 2;</code>
+     * <code>uint32 statement_id = 2;</code>
      */
     int getStatementId();
 
@@ -13847,7 +14060,7 @@ public final class Requests {
     public static final int CONNECTION_ID_FIELD_NUMBER = 1;
     private volatile java.lang.Object connectionId_;
     /**
-     * <code>optional string connection_id = 1;</code>
+     * <code>string connection_id = 1;</code>
      */
     public java.lang.String getConnectionId() {
       java.lang.Object ref = connectionId_;
@@ -13862,7 +14075,7 @@ public final class Requests {
       }
     }
     /**
-     * <code>optional string connection_id = 1;</code>
+     * <code>string connection_id = 1;</code>
      */
     public com.google.protobuf.ByteString
         getConnectionIdBytes() {
@@ -13881,7 +14094,7 @@ public final class Requests {
     public static final int STATEMENT_ID_FIELD_NUMBER = 2;
     private int statementId_;
     /**
-     * <code>optional uint32 statement_id = 2;</code>
+     * <code>uint32 statement_id = 2;</code>
      */
     public int getStatementId() {
       return statementId_;
@@ -13990,7 +14203,7 @@ public final class Requests {
         return memoizedHashCode;
       }
       int hash = 41;
-      hash = (19 * hash) + getDescriptorForType().hashCode();
+      hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + CONNECTION_ID_FIELD_NUMBER;
       hash = (53 * hash) + getConnectionId().hashCode();
       hash = (37 * hash) + STATEMENT_ID_FIELD_NUMBER;
@@ -14004,6 +14217,17 @@ public final class Requests {
       return hash;
     }
 
+    public static org.apache.calcite.avatica.proto.Requests.PrepareAndExecuteBatchRequest parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static org.apache.calcite.avatica.proto.Requests.PrepareAndExecuteBatchRequest parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
     public static org.apache.calcite.avatica.proto.Requests.PrepareAndExecuteBatchRequest parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -14246,7 +14470,7 @@ public final class Requests {
 
       private java.lang.Object connectionId_ = "";
       /**
-       * <code>optional string connection_id = 1;</code>
+       * <code>string connection_id = 1;</code>
        */
       public java.lang.String getConnectionId() {
         java.lang.Object ref = connectionId_;
@@ -14261,7 +14485,7 @@ public final class Requests {
         }
       }
       /**
-       * <code>optional string connection_id = 1;</code>
+       * <code>string connection_id = 1;</code>
        */
       public com.google.protobuf.ByteString
           getConnectionIdBytes() {
@@ -14277,7 +14501,7 @@ public final class Requests {
         }
       }
       /**
-       * <code>optional string connection_id = 1;</code>
+       * <code>string connection_id = 1;</code>
        */
       public Builder setConnectionId(
           java.lang.String value) {
@@ -14290,7 +14514,7 @@ public final class Requests {
         return this;
       }
       /**
-       * <code>optional string connection_id = 1;</code>
+       * <code>string connection_id = 1;</code>
        */
       public Builder clearConnectionId() {
         
@@ -14299,7 +14523,7 @@ public final class Requests {
         return this;
       }
       /**
-       * <code>optional string connection_id = 1;</code>
+       * <code>string connection_id = 1;</code>
        */
       public Builder setConnectionIdBytes(
           com.google.protobuf.ByteString value) {
@@ -14315,13 +14539,13 @@ public final class Requests {
 
       private int statementId_ ;
       /**
-       * <code>optional uint32 statement_id = 2;</code>
+       * <code>uint32 statement_id = 2;</code>
        */
       public int getStatementId() {
         return statementId_;
       }
       /**
-       * <code>optional uint32 statement_id = 2;</code>
+       * <code>uint32 statement_id = 2;</code>
        */
       public Builder setStatementId(int value) {
         
@@ -14330,7 +14554,7 @@ public final class Requests {
         return this;
       }
       /**
-       * <code>optional uint32 statement_id = 2;</code>
+       * <code>uint32 statement_id = 2;</code>
        */
       public Builder clearStatementId() {
         
@@ -14676,7 +14900,7 @@ public final class Requests {
         return memoizedHashCode;
       }
       int hash = 41;
-      hash = (19 * hash) + getDescriptorForType().hashCode();
+      hash = (19 * hash) + getDescriptor().hashCode();
       if (getParameterValuesCount() > 0) {
         hash = (37 * hash) + PARAMETER_VALUES_FIELD_NUMBER;
         hash = (53 * hash) + getParameterValuesList().hashCode();
@@ -14686,6 +14910,17 @@ public final class Requests {
       return hash;
     }
 
+    public static org.apache.calcite.avatica.proto.Requests.UpdateBatch parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static org.apache.calcite.avatica.proto.Requests.UpdateBatch parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
     public static org.apache.calcite.avatica.proto.Requests.UpdateBatch parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -15229,17 +15464,17 @@ public final class Requests {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>optional string connection_id = 1;</code>
+     * <code>string connection_id = 1;</code>
      */
     java.lang.String getConnectionId();
     /**
-     * <code>optional string connection_id = 1;</code>
+     * <code>string connection_id = 1;</code>
      */
     com.google.protobuf.ByteString
         getConnectionIdBytes();
 
     /**
-     * <code>optional uint32 statement_id = 2;</code>
+     * <code>uint32 statement_id = 2;</code>
      */
     int getStatementId();
 
@@ -15379,7 +15614,7 @@ public final class Requests {
     public static final int CONNECTION_ID_FIELD_NUMBER = 1;
     private volatile java.lang.Object connectionId_;
     /**
-     * <code>optional string connection_id = 1;</code>
+     * <code>string connection_id = 1;</code>
      */
     public java.lang.String getConnectionId() {
       java.lang.Object ref = connectionId_;
@@ -15394,7 +15629,7 @@ public final class Requests {
       }
     }
     /**
-     * <code>optional string connection_id = 1;</code>
+     * <code>string connection_id = 1;</code>
      */
     public com.google.protobuf.ByteString
         getConnectionIdBytes() {
@@ -15413,7 +15648,7 @@ public final class Requests {
     public static final int STATEMENT_ID_FIELD_NUMBER = 2;
     private int statementId_;
     /**
-     * <code>optional uint32 statement_id = 2;</code>
+     * <code>uint32 statement_id = 2;</code>
      */
     public int getStatementId() {
       return statementId_;
@@ -15544,7 +15779,7 @@ public final class Requests {
         return memoizedHashCode;
       }
       int hash = 41;
-      hash = (19 * hash) + getDescriptorForType().hashCode();
+      hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + CONNECTION_ID_FIELD_NUMBER;
       hash = (53 * hash) + getConnectionId().hashCode();
       hash = (37 * hash) + STATEMENT_ID_FIELD_NUMBER;
@@ -15558,6 +15793,17 @@ public final class Requests {
       return hash;
     }
 
+    public static org.apache.calcite.avatica.proto.Requests.ExecuteBatchRequest parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static org.apache.calcite.avatica.proto.Requests.ExecuteBatchRequest parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
     public static org.apache.calcite.avatica.proto.Requests.ExecuteBatchRequest parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -15821,7 +16067,7 @@ public final class Requests {
 
       private java.lang.Object connectionId_ = "";
       /**
-       * <code>optional string connection_id = 1;</code>
+       * <code>string connection_id = 1;</code>
        */
       public java.lang.String getConnectionId() {
         java.lang.Object ref = connectionId_;
@@ -15836,7 +16082,7 @@ public final class Requests {
         }
       }
       /**
-       * <code>optional string connection_id = 1;</code>
+       * <code>string connection_id = 1;</code>
        */
       public com.google.protobuf.ByteString
           getConnectionIdBytes() {
@@ -15852,7 +16098,7 @@ public final class Requests {
         }
       }
       /**
-       * <code>optional string connection_id = 1;</code>
+       * <code>string connection_id = 1;</code>
        */
       public Builder setConnectionId(
           java.lang.String value) {
@@ -15865,7 +16111,7 @@ public final class Requests {
         return this;
       }
       /**
-       * <code>optional string connection_id = 1;</code>
+       * <code>string connection_id = 1;</code>
        */
       public Builder clearConnectionId() {
         
@@ -15874,7 +16120,7 @@ public final class Requests {
         return this;
       }
       /**
-       * <code>optional string connection_id = 1;</code>
+       * <code>string connection_id = 1;</code>
        */
       public Builder setConnectionIdBytes(
           com.google.protobuf.ByteString value) {
@@ -15890,13 +16136,13 @@ public final class Requests {
 
       private int statementId_ ;
       /**
-       * <code>optional uint32 statement_id = 2;</code>
+       * <code>uint32 statement_id = 2;</code>
        */
       public int getStatementId() {
         return statementId_;
       }
       /**
-       * <code>optional uint32 statement_id = 2;</code>
+       * <code>uint32 statement_id = 2;</code>
        */
       public Builder setStatementId(int value) {
         
@@ -15905,7 +16151,7 @@ public final class Requests {
         return this;
       }
       /**
-       * <code>optional uint32 statement_id = 2;</code>
+       * <code>uint32 statement_id = 2;</code>
        */
       public Builder clearStatementId() {
         
