@@ -265,7 +265,7 @@ limitations under the License.
       <id>compile-protobuf</id>
       <activation>
         <os>
-          <arch>!ppcle_64</arch>
+          <arch>!ppc64le</arch>
         </os>
       </activation>
       <build>
