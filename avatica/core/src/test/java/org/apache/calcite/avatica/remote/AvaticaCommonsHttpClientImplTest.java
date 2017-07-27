@@ -16,11 +16,15 @@
  */
 package org.apache.calcite.avatica.remote;
 
+import org.apache.calcite.avatica.remote.HostnameVerificationConfigurable.HostnameVerification;
+
 import org.apache.http.NoHttpResponseException;
 import org.apache.http.StatusLine;
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.client.protocol.HttpClientContext;
+import org.apache.http.conn.ssl.DefaultHostnameVerifier;
+import org.apache.http.conn.ssl.NoopHostnameVerifier;
 import org.apache.http.entity.StringEntity;
 
 import org.junit.Test;
@@ -28,8 +32,11 @@ import org.mockito.invocation.InvocationOnMock;
 import org.mockito.stubbing.Answer;
 
 import java.net.HttpURLConnection;
+import javax.net.ssl.HostnameVerifier;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertTrue;
 import static org.mockito.Mockito.any;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
@@ -109,6 +116,26 @@ public class AvaticaCommonsHttpClientImplTest {
 
     byte[] responseBytes = client.send(requestBytes);
     assertEquals("success", new String(responseBytes, UTF_8));
+  }
+
+  @Test public void testHostnameVerification() throws Exception {
+    AvaticaCommonsHttpClientImpl client = mock(AvaticaCommonsHttpClientImpl.class);
+    // Call the real method
+    when(client.getHostnameVerifier(any(HostnameVerification.class)))
+        .thenCallRealMethod();
+
+    // No verification should give the default (strict) verifier
+    HostnameVerifier actualVerifier = client.getHostnameVerifier(null);
+    assertNotNull(actualVerifier);
+    assertTrue(actualVerifier instanceof DefaultHostnameVerifier);
+
+    actualVerifier = client.getHostnameVerifier(HostnameVerification.STRICT);
+    assertNotNull(actualVerifier);
+    assertTrue(actualVerifier instanceof DefaultHostnameVerifier);
+
+    actualVerifier = client.getHostnameVerifier(HostnameVerification.NONE);
+    assertNotNull(actualVerifier);
+    assertTrue(actualVerifier instanceof NoopHostnameVerifier);
   }
 }
 
