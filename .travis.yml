@@ -20,6 +20,7 @@ language: java
 jdk:
   - oraclejdk8
   - oraclejdk7
+  - ibmjava8
 branches:
   only:
     - master
@@ -39,4 +40,5 @@ sudo: false
 cache:
   directories:
     - $HOME/.m2
+group: edge
 # End .travis.yml
