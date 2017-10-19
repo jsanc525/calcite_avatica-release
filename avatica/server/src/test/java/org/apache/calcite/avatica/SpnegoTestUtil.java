@@ -16,6 +16,7 @@
  */
 package org.apache.calcite.avatica;
 
+import org.apache.calcite.avatica.remote.KerberosConnection;
 import org.apache.calcite.avatica.remote.Service.RpcMetadataResponse;
 import org.apache.calcite.avatica.server.AvaticaHandler;
 
@@ -101,15 +102,24 @@ public class SpnegoTestUtil {
       throws Exception {
     try (BufferedWriter writer = new BufferedWriter(new FileWriter(configFile))) {
       // Server login
-      writer.write("com.sun.security.jgss.accept {\n");
-      writer.write(" com.sun.security.auth.module.Krb5LoginModule required\n");
+      if (KerberosConnection.isIbmJava()) {
+        writer.write("com.ibm.security.jgss.accept {\n");
+      } else {
+        writer.write("com.sun.security.jgss.accept {\n");
+      }
+      writer.write(" " + KerberosConnection.getKrb5LoginModuleName() + " required\n");
       writer.write(" principal=\"" + SERVER_PRINCIPAL + "\"\n");
-      writer.write(" useKeyTab=true\n");
-      writer.write(" keyTab=\"" + serverKeytab + "\"\n");
-      writer.write(" storeKey=true \n");
       // Some extra debug information from JAAS
-      //writer.write(" debug=true\n");
-      writer.write(" isInitiator=false;\n");
+      // writer.write(" debug=true\n");
+      if (KerberosConnection.isIbmJava()) {
+        writer.write(" useKeytab=\"" + serverKeytab.getPath() + "\"\n");
+        writer.write(" credsType=both;\n");
+      } else {
+        writer.write(" useKeyTab=true\n");
+        writer.write(" keyTab=\"" + serverKeytab.getPath() + "\"\n");
+        writer.write(" isInitiator=false\n");
+        writer.write(" storeKey=true;\n");
+      }
       writer.write("};\n");
     }
   }

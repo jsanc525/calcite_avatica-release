@@ -20,7 +20,6 @@ import org.apache.calcite.avatica.SpnegoTestUtil;
 import org.apache.calcite.avatica.remote.AvaticaCommonsHttpClientSpnegoImpl;
 
 import org.apache.kerby.kerberos.kerb.KrbException;
-import org.apache.kerby.kerberos.kerb.client.JaasKrbUtil;
 import org.apache.kerby.kerberos.kerb.client.KrbConfig;
 import org.apache.kerby.kerberos.kerb.client.KrbConfigKey;
 import org.apache.kerby.kerberos.kerb.server.SimpleKdcServer;
@@ -35,9 +34,13 @@ import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.nio.charset.Charset;
 import java.security.Principal;
 import java.security.PrivilegedExceptionAction;
 import java.util.Set;
@@ -57,6 +60,7 @@ import static org.junit.Assert.assertTrue;
  */
 public class HttpServerSpnegoWithoutJaasTest {
   private static final Logger LOG = LoggerFactory.getLogger(HttpServerSpnegoWithoutJaasTest.class);
+  private static final Charset UTF_8 = Charset.forName("UTF-8");
 
   private static SimpleKdcServer kdc;
   private static HttpServer httpServer;
@@ -96,6 +100,15 @@ public class HttpServerSpnegoWithoutJaasTest {
     kdc.init();
     kdc.start();
     isKdcStarted = true;
+
+    try (FileInputStream fis = new FileInputStream(new File(kdcDir, "krb5.conf"));
+        InputStreamReader isr = new InputStreamReader(fis, UTF_8);
+        BufferedReader r = new BufferedReader(isr)) {
+      String line;
+      while ((line = r.readLine()) != null) {
+        LOG.debug("KRB5 Config line: {}", line);
+      }
+    }
 
     File keytabDir = new File(target, HttpServerSpnegoWithoutJaasTest.class.getSimpleName()
         + "_keytabs");
@@ -173,8 +186,8 @@ public class HttpServerSpnegoWithoutJaasTest {
 
   @Test public void testAuthenticatedClientsAllowed() throws Exception {
     // Create the subject for the client
-    final Subject clientSubject = JaasKrbUtil.loginUsingKeytab(SpnegoTestUtil.CLIENT_PRINCIPAL,
-        clientKeytab);
+    final Subject clientSubject = AvaticaJaasKrbUtil.loginUsingKeytab(
+        SpnegoTestUtil.CLIENT_PRINCIPAL, clientKeytab);
     final Set<Principal> clientPrincipals = clientSubject.getPrincipals();
     // Make sure the subject has a principal
     assertFalse(clientPrincipals.isEmpty());
