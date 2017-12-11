@@ -17,9 +17,14 @@
 # limitations under the License.
 #
 language: java
-jdk:
-  - oraclejdk8
-  - oraclejdk7
+matrix:
+  fast_finish: true
+  include:
+    - jdk: oraclejdk8
+    - jdk: openjdk7
+      # Travis appears to have broken IBM JDK. Can only get a JRE.
+      # Needs to be investigate.
+      #    - jdk: ibmjava8
 branches:
   only:
     - master
@@ -39,4 +44,7 @@ sudo: false
 cache:
   directories:
     - $HOME/.m2
+sudo: required
+# Added to enable IBM Java. Temporarily removed.
+#group: edge
 # End .travis.yml
