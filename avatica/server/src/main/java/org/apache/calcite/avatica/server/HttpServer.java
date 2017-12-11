@@ -30,8 +30,10 @@ import org.eclipse.jetty.security.LoginService;
 import org.eclipse.jetty.security.authentication.BasicAuthenticator;
 import org.eclipse.jetty.security.authentication.DigestAuthenticator;
 import org.eclipse.jetty.security.authentication.SpnegoAuthenticator;
+import org.eclipse.jetty.server.AbstractConnectionFactory;
 import org.eclipse.jetty.server.Connector;
 import org.eclipse.jetty.server.Handler;
+import org.eclipse.jetty.server.HttpConnectionFactory;
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.server.ServerConnector;
 import org.eclipse.jetty.server.handler.DefaultHandler;
@@ -67,12 +69,15 @@ import javax.security.auth.login.LoginException;
  */
 public class HttpServer {
   private static final Logger LOG = LoggerFactory.getLogger(HttpServer.class);
+  private static final int MAX_ALLOWED_HEADER_SIZE = 1024 * 64;
 
   private Server server;
   private int port = -1;
   private final AvaticaHandler handler;
   private final AvaticaServerConfiguration config;
   private final Subject subject;
+  private final SslContextFactory sslFactory;
+  private final int maxAllowedHeaderSize;
 
   @Deprecated
   public HttpServer(Handler handler) {
@@ -120,10 +125,39 @@ public class HttpServer {
    */
   public HttpServer(int port, AvaticaHandler handler, AvaticaServerConfiguration config,
       Subject subject) {
+    this(port, handler, config, subject, null);
+  }
+
+  /**
+   * Constructs an {@link HttpServer}.
+   * @param port The listen port
+   * @param handler The Handler to run
+   * @param config Optional configuration for the server
+   * @param subject The javax.security Subject for the server, or null
+   * @param sslFactory A configured SslContextFactory, or null
+   */
+  public HttpServer(int port, AvaticaHandler handler, AvaticaServerConfiguration config,
+      Subject subject, SslContextFactory sslFactory) {
+    this(port, handler, config, subject, sslFactory, MAX_ALLOWED_HEADER_SIZE);
+  }
+
+  /**
+   * Constructs an {@link HttpServer}.
+   * @param port The listen port
+   * @param handler The Handler to run
+   * @param config Optional configuration for the server
+   * @param subject The javax.security Subject for the server, or null
+   * @param sslFactory A configured SslContextFactory, or null
+   * @param maxAllowedHeaderSize A maximum size in bytes that are allowed in an HTTP header
+   */
+  public HttpServer(int port, AvaticaHandler handler, AvaticaServerConfiguration config,
+      Subject subject, SslContextFactory sslFactory, int maxAllowedHeaderSize) {
     this.port = port;
     this.handler = handler;
     this.config = config;
     this.subject = subject;
+    this.sslFactory = sslFactory;
+    this.maxAllowedHeaderSize = maxAllowedHeaderSize;
   }
 
   private static AvaticaHandler wrapJettyHandler(Handler handler) {
@@ -158,7 +192,7 @@ public class HttpServer {
     server = new Server(threadPool);
     server.manage(threadPool);
 
-    final ServerConnector connector = configureConnector(new ServerConnector(server), port);
+    final ServerConnector connector = configureConnector(getConnector(), port);
     ConstraintSecurityHandler securityHandler = null;
 
     if (null != this.config) {
@@ -210,6 +244,16 @@ public class HttpServer {
       // Failed to do the DNS lookup, bail out.
       throw new RuntimeException(e);
     }
+  }
+
+  private ServerConnector getConnector() {
+    HttpConnectionFactory factory = new HttpConnectionFactory();
+    factory.getHttpConfiguration().setRequestHeaderSize(maxAllowedHeaderSize);
+
+    if (null == sslFactory) {
+      return new ServerConnector(server, factory);
+    }
+    return new ServerConnector(server, AbstractConnectionFactory.getFactories(sslFactory, factory));
   }
 
   private RpcMetadataResponse createRpcServerMetadata(ServerConnector connector) throws
@@ -382,6 +426,8 @@ public class HttpServer {
     private String loginServiceRealm;
     private String loginServiceProperties;
     private String[] loginServiceAllowedRoles;
+
+    private int maxAllowedHeaderSize = MAX_ALLOWED_HEADER_SIZE;
 
     public Builder() {}
 
@@ -561,6 +607,17 @@ public class HttpServer {
     }
 
     /**
+     * Configures the maximum size, in bytes, of an HTTP header that the server will read.
+     *
+     * @param maxHeaderSize Maximums HTTP header size in bytes
+     * @return <code>this</code>
+     */
+    public Builder withMaxHeaderSize(int maxHeaderSize) {
+      this.maxAllowedHeaderSize = maxHeaderSize;
+      return this;
+    }
+
+    /**
      * Builds the HttpServer instance from <code>this</code>.
      * @return An HttpServer.
      */
@@ -593,8 +650,8 @@ public class HttpServer {
       }
 
       AvaticaHandler handler = buildHandler(this, serverConfig);
-
-      return new HttpServer(port, handler, serverConfig, subject);
+      return new HttpServer(port, handler, serverConfig, subject, sslFactory,
+          maxAllowedHeaderSize);
     }
 
     /**
