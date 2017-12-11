@@ -39,6 +39,7 @@ import org.eclipse.jetty.server.ServerConnector;
 import org.eclipse.jetty.server.handler.DefaultHandler;
 import org.eclipse.jetty.server.handler.HandlerList;
 import org.eclipse.jetty.util.security.Constraint;
+import org.eclipse.jetty.util.ssl.SslContextFactory;
 import org.eclipse.jetty.util.thread.QueuedThreadPool;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -192,7 +193,7 @@ public class HttpServer {
     server = new Server(threadPool);
     server.manage(threadPool);
 
-    final ServerConnector connector = configureConnector(new ServerConnector(server), port);
+    final ServerConnector connector = configureConnector(getConnector(), port);
     ConstraintSecurityHandler securityHandler = null;
 
     if (null != this.config) {
@@ -676,7 +677,14 @@ public class HttpServer {
       }
 
       AvaticaHandler handler = buildHandler(this, serverConfig);
-
+      SslContextFactory sslFactory = null;
+      if (usingTLS) {
+        sslFactory = new SslContextFactory();
+        sslFactory.setKeyStorePath(this.keystore.getAbsolutePath());
+        sslFactory.setKeyStorePassword(keystorePassword);
+        sslFactory.setTrustStorePath(truststore.getAbsolutePath());
+        sslFactory.setTrustStorePassword(truststorePassword);
+      }
       return new HttpServer(port, handler, serverConfig, subject, sslFactory,
           maxAllowedHeaderSize);
     }
