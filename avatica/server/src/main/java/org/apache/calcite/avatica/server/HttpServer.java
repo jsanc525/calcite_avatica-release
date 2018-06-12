@@ -39,6 +39,7 @@ import org.eclipse.jetty.server.ServerConnector;
 import org.eclipse.jetty.server.handler.DefaultHandler;
 import org.eclipse.jetty.server.handler.HandlerList;
 import org.eclipse.jetty.util.security.Constraint;
+import org.eclipse.jetty.util.ssl.SslContextFactory;
 import org.eclipse.jetty.util.thread.QueuedThreadPool;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -427,6 +428,13 @@ public class HttpServer {
     private String loginServiceProperties;
     private String[] loginServiceAllowedRoles;
 
+    private boolean usingTLS = false;
+    private File keystore;
+    private String keystorePassword;
+    private File truststore;
+    private String truststorePassword;
+
+    // The maximum size in bytes of an http header the server will read (64KB)
     private int maxAllowedHeaderSize = MAX_ALLOWED_HEADER_SIZE;
 
     public Builder() {}
@@ -607,6 +615,25 @@ public class HttpServer {
     }
 
     /**
+     * Configures the server to use TLS for wire encryption.
+     *
+     * @param keystore The server's keystore
+     * @param keystorePassword The keystore's password
+     * @param truststore The truststore containing the key used to generate the server's key
+     * @param truststorePassword The truststore's password
+     * @return <code>this</code>
+     */
+    public Builder withTLS(File keystore, String keystorePassword, File truststore,
+        String truststorePassword) {
+      this.usingTLS = true;
+      this.keystore = Objects.requireNonNull(keystore);
+      this.keystorePassword = Objects.requireNonNull(keystorePassword);
+      this.truststore = Objects.requireNonNull(truststore);
+      this.truststorePassword = Objects.requireNonNull(truststorePassword);
+      return this;
+    }
+
+    /**
      * Configures the maximum size, in bytes, of an HTTP header that the server will read.
      *
      * @param maxHeaderSize Maximums HTTP header size in bytes
@@ -650,6 +677,14 @@ public class HttpServer {
       }
 
       AvaticaHandler handler = buildHandler(this, serverConfig);
+      SslContextFactory sslFactory = null;
+      if (usingTLS) {
+        sslFactory = new SslContextFactory();
+        sslFactory.setKeyStorePath(this.keystore.getAbsolutePath());
+        sslFactory.setKeyStorePassword(keystorePassword);
+        sslFactory.setTrustStorePath(truststore.getAbsolutePath());
+        sslFactory.setTrustStorePassword(truststorePassword);
+      }
       return new HttpServer(port, handler, serverConfig, subject, sslFactory,
           maxAllowedHeaderSize);
     }
