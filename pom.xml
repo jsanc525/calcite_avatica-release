@@ -738,7 +738,7 @@ limitations under the License.
     <repository>
       <id>central</id>
       <name>Central Repository</name>
-      <url>http://repo.maven.apache.org/maven2</url>
+      <url>https://repo1.maven.apache.org/maven2</url>
       <layout>default</layout>
       <snapshots>
         <enabled>false</enabled>
@@ -752,7 +752,7 @@ limitations under the License.
       </releases>
       <id>conjars</id>
       <name>Conjars</name>
-      <url>http://conjars.org/repo</url>
+      <url>https://conjars.org/repo</url>
       <layout>default</layout>
     </repository>
   </repositories>
