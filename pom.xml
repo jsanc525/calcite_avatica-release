@@ -98,7 +98,7 @@ limitations under the License.
     <mongo-java-driver.version>2.12.3</mongo-java-driver.version>
     <mysql-driver.version>5.1.20</mysql-driver.version>
     <opencsv.version>2.3</opencsv.version>
-    <pentaho-aggdesigner.version>5.1.5-jhyde</pentaho-aggdesigner.version>
+    <pentaho-aggdesigner.version>TRUNK-SNAPSHOT</pentaho-aggdesigner.version>
     <postgresql.version>9.3-1102-jdbc3</postgresql.version>
     <protobuf.version>3.0.0-beta-1</protobuf.version>
     <quidem.version>0.7</quidem.version>
@@ -752,7 +752,7 @@ limitations under the License.
       </releases>
       <id>conjars</id>
       <name>Conjars</name>
-      <url>https://conjars.org/repo</url>
+      <url>https://repo.spring.io/plugins-releas/</url>
       <layout>default</layout>
     </repository>
   </repositories>
